@@ -1,3 +1,7 @@
-body{
-  
+.container{
+  margin: 0 auto;
+  padding-left: $padding;
+  padding-right: $padding;
+  max-width: $max-width;
+  min-width: $min-width;
 }

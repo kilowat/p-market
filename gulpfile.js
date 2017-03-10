@@ -32,21 +32,21 @@ var libs = {
   breakpoint: libsPath.breakpoint,
  // bourbon: libsPath.bourbon,
  // bootstrap: libsPath.bootstrap,
-  //slick: libsPath.slick, 
+  //slick: libsPath.slick,
   //formValidator: libsPath.formValidator,
   //select:libsPath.select,
   //fancybox:libsPath.fancybox,
   //icheck:libsPath.icheck,
   //placeholder:libsPath.placeholder,
   //fullpage:libsPath.fullpage,
-};  
+};
 var root = "./app/";
 
 var configServer = {
   tunnel: false,
   host: 'localhost',
   logPrefix: "Frontend_Devil",
-  proxy: 'd.local',
+  proxy: 'p-market.local',
   port: 9000,
   browser: "firefox",
 };
@@ -116,7 +116,7 @@ function html_build() {
 }
 
 function js_build() {
-	
+
   return gulp.src(path.src.js)
     .pipe(plugins.if(buildType === "min", plugins.concat('all.js')))
 	.pipe(plugins.if(buildType === "min", plugins.jsmin()))
@@ -230,12 +230,12 @@ function lib_contact_build(){
 	.pipe(plugins.cssmin())
 	.pipe(plugins.if(env === "ftp", conn.dest(path.build.css)))
 	.pipe(plugins.if(env === "local", gulp.dest(path.build.css)))
-	
+
 	gulp.src('src/libs/**/*.js')
 	.pipe(plugins.concat('libs.js'))
 	.pipe(plugins.if(env === "ftp", conn.dest(path.build.js)))
 	.pipe(plugins.if(env === "local", gulp.dest(path.build.js)))
-		
+
 	return 	gulp.src(['src/libs/**/*.png', 'src/libs/**/*.gif', 'src/libs/**/*.jpg', 'src/libs/**/*.svg'])
 	.pipe(plugins.flatten())
 	.pipe(plugins.if(env === "ftp", conn.dest(path.build.img)))

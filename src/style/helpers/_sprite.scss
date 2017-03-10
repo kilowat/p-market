@@ -7,13 +7,13 @@ $we-width: 9px;
 $we-height: 9px;
 $we-total-width: 9px;
 $we-total-height: 9px;
-$we-image: '../images/sprite.png';
-$we: (0px, 0px, 0px, 0px, 9px, 9px, 9px, 9px, '../images/sprite.png', 'we', );
+$we-image: './app/images/sprite.png';
+$we: (0px, 0px, 0px, 0px, 9px, 9px, 9px, 9px, './app/images/sprite.png', 'we', );
 $spritesheet-width: 9px;
 $spritesheet-height: 9px;
-$spritesheet-image: '../images/sprite.png';
+$spritesheet-image: './app/images/sprite.png';
 $spritesheet-sprites: ($we, );
-$spritesheet: (9px, 9px, '../images/sprite.png', $spritesheet-sprites, );
+$spritesheet: (9px, 9px, './app/images/sprite.png', $spritesheet-sprites, );
 
 @mixin sprite-width($sprite) {
   width: nth($sprite, 5);
