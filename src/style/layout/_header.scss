@@ -1,0 +1,17 @@
+header{
+  .logo-block{
+    @include span(41.8%);
+    margin: 0;
+    .logo{
+      margin-top: 27px;
+      display: inline-block;
+    }
+  }
+  .search-block{
+    @include span(39%);
+    margin: 0;
+  }
+  .contact-block{
+    @include span(19% last);
+  }
+}

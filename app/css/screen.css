@@ -56,6 +56,37 @@ table {
   min-width: 280px;
 }
 
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header .logo-block {
+  width: 41.8%;
+  float: left;
+  margin-right: 5.26316%;
+  margin: 0;
+}
+
+header .logo-block .logo {
+  margin-top: 27px;
+  display: inline-block;
+}
+
+header .search-block {
+  width: 39%;
+  float: left;
+  margin-right: 5.26316%;
+  margin: 0;
+}
+
+header .contact-block {
+  width: 19%;
+  float: right;
+  margin-right: 0;
+}
+
 #simpleDrawer {
   background: #fff none repeat scroll 0 0;
   height: 100%;

@@ -7,6 +7,7 @@
   <!-- libs:css -->
   <link rel="stylesheet" href="./libs/bxslider/src/jquery.bxslider.css">
   <link rel="stylesheet" href="./libs/fancybox/css/jquery.fancybox.css">
+  <link rel="stylesheet" href="./libs/fullpage/css/jquery.fullpage.min.css">
   <link rel="stylesheet" href="./libs/msgBox/css/lobibox.min.css">
   <link rel="stylesheet" href="./libs/slick/css/slick.css">
   <!-- endinject -->
@@ -21,14 +22,33 @@
   <header>
     <div class="wrapper top-block">
       <div class="container">
-        <div class="coll">
-          logo
+        <div class="coll logo-block">
+          <a href="/" title="Прицеп маркет" class="logo"><img src="./images/logo.png" alt="Прицеп маркет"></a>
+          <div class="row table-row">
+            <div class="table-cell">
+              <button type="button" name="button">Каталог</button>
+            </div>
+            <div class="table-cell">
+              <strong class="slogan">Все свое вожу с собой!</strong>
+            </div>
+          </div>
         </div>
-        <div class="coll">
-          center
+        <div class="coll search-block">
+          <!--start component search-->
+          <div class="search">
+            <form class="" action="index.html" method="post">
+              <input type="text" name="" value="">
+              <button type="submit" name="button">S</button>
+            </form>
+          </div>
+          <!--end component search-->
         </div>
-        <div class="coll">
-          right
+        <div class="coll contact-block">
+          <div class="phone-number">
+            <!--start include area-->
+            +7 (861) 260-20-09
+            <!--end include area-->
+          </div>
         </div>
       </div>
     </div>
@@ -45,23 +65,27 @@
   <script src="./libs/jquery/js/jquery.min.js"></script>
   <!--libs:js-->
 
+  <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+
   <script src="./libs/bxslider/js/jquery.bxslider.js"></script>
 
   <script src="./libs/drawer/js/simpleDrawer.js"></script>
 
+  <script src="./libs/fancybox/js/jquery.fancybox.pack.js"></script>
+
   <script src="./libs/formValidator/js/jquery.form-validator.min.js"></script>
 
-  <script src="./libs/fancybox/js/jquery.fancybox.pack.js"></script>
+  <script src="./libs/fullpage/js/jquery.fullpage.min.js"></script>
 
   <script src="./libs/icheck/js/icheck.min.js"></script>
 
   <script src="./libs/msgBox/js/lobibox.min.js"></script>
 
-  <script src="./libs/slick/js/slick.min.js"></script>
+  <script src="./libs/placeholder/js/jquery.textPlaceholder.js"></script>
 
   <script src="./libs/select/js/selectize.min.js"></script>
 
-  <script src="./libs/placeholder/js/jquery.textPlaceholder.js"></script>
+  <script src="./libs/slick/js/slick.min.js"></script>
 
   <!--endinject-->
   <!--dev:js-->
