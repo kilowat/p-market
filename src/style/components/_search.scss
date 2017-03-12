@@ -1,0 +1,22 @@
+.search{
+  position: relative;
+  input[type=text]{
+    width: 91.5%;
+    height: 47px;
+    box-sizing: border-box;
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    padding-left: 5%;
+    color: #c3c3c3;
+    font-family: $roboto;
+    font-size: 1.02rem;
+  }
+  .search-btn{
+    position: absolute;
+    border: 0;
+    background-color: transparent;
+    right: 44px;
+    top: 13px;
+    cursor: pointer;
+  }
+}

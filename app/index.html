@@ -3,12 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>New project</title>
+  <title>Прицеп маркет</title>
   <!-- libs:css -->
   <link rel="stylesheet" href="./libs/bxslider/src/jquery.bxslider.css">
-  <link rel="stylesheet" href="./libs/fancybox/css/jquery.fancybox.css">
-  <link rel="stylesheet" href="./libs/fullpage/css/jquery.fullpage.min.css">
-  <link rel="stylesheet" href="./libs/msgBox/css/lobibox.min.css">
   <link rel="stylesheet" href="./libs/slick/css/slick.css">
   <!-- endinject -->
   <!-- dev:css -->
@@ -24,9 +21,9 @@
       <div class="container">
         <div class="coll logo-block">
           <a href="/" title="Прицеп маркет" class="logo"><img src="./images/logo.png" alt="Прицеп маркет"></a>
-          <div class="row table-row">
+          <div class="row table">
             <div class="table-cell">
-              <button type="button" name="button">Каталог</button>
+              <button type="button" name="button" class="red-button catalog-btn"><span>Каталог</span> <i class="ic-squares"><i></i><i></i></i></button>
             </div>
             <div class="table-cell">
               <strong class="slogan">Все свое вожу с собой!</strong>
@@ -37,8 +34,8 @@
           <!--start component search-->
           <div class="search">
             <form class="" action="index.html" method="post">
-              <input type="text" name="" value="">
-              <button type="submit" name="button">S</button>
+              <input type="text" name="" value="Поиск...">
+              <button type="submit" class="search-btn" name="button"><i class="ic-search"></i></button>
             </form>
           </div>
           <!--end component search-->
@@ -49,14 +46,357 @@
             +7 (861) 260-20-09
             <!--end include area-->
           </div>
+          <div class="callback">
+            <a href="#" title="заказать обратный звонок">заказать обратный звонок</a>
+          </div>
+          <div class="soc-icons">
+            <ul>
+              <li><a href="" title="Вконтакте"><i class="ic-vk"></i></a></li>
+              <li><a href="" title="Facebook"><i class="ic-fb"></i></a></li>
+              <li><a href="" title="Instagram"><i class="ic-inst"></i></a></li>
+              <li><a href="" title="youtube"><i class="ic-ytube"></i></a></li>
+              <li><a href="" title="Telegram"><i class="ic-tel"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="wrapper bg-gray">
+      <nav class="top-menu container">
+        <!--start menu component-->
+        <ul>
+          <li><a href="/" title><i class="ic-home"></i></a></li>
+          <li><a href="#" title>о компании</a></li>
+          <li><a href="#" title>новости и акции</a></li>
+          <li><a href="#" title>информация</a></li>
+          <li><a href="#" title>как сделать заказ</a></li>
+          <li><a href="#" title>оплата</a></li>
+          <li><a href="#" title>доставка</a></li>
+          <li><a href="#" title>гарантия</a></li>
+          <li><a href="#" title>услуги и сервис</a></li>
+          <li><a href="#" title>отзывы</a></li>
+          <li><a href="#" title>контакты</a></li>
+        </ul>
+        <!--end menu component-->
+      </nav>
     </div>
 
   </header>
   <main>
 
-    index page
+    <!--start component slider-->
+    <div class="form-order container">
+      <div class="form-order-wrapper">
+        <div class="form-header">
+          <h2>Оставить заявку</h2>
+          <span class="form-text">
+					Оставьте заявку и наш менеджер
+свяжется с вами в ближайшее время
+				</span>
+        </div>
+        <form class="" action="index.html" method="post">
+          <div class="row">
+            <input type="text" name="name" value="" placeholder="ИМЯ И ФАМИЛИЯ">
+          </div>
+          <div class="row">
+            <input type="text" name="phone" value="" placeholder="НОМЕР ТЕЛЕФОНА">
+          </div>
+          <div class="row">
+            <input type="text" name="email" value="" placeholder="E-MAIL">
+          </div>
+          <div class="row">
+            <textarea name="text" placeholder="ТЕКСТ ЗАПРОСА"></textarea>
+          </div>
+          <div class="row">
+            <button type="button" name="button">ОСТАВИТЬ ЗАЯВКУ</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <div id="slider">
+      <a href="#" title="slider" style="background-image:url(./images/slide.jpg)">
+
+      </a>
+      <a href="#" title="slider" style="background-image:url(./images/slide.jpg)">
+
+      </a>
+      <a href="#" title="slider" style="background-image:url(./images/slide.jpg)">
+
+      </a>
+      <a href="#" title="slider" style="background-image:url(./images/slide.jpg)">
+
+      </a>
+    </div>
+    <!--end component slider-->
+
+    <!--start component promo-->
+    <div class="wrapper-promo">
+      <div class="promo container">
+        <div class="row filter">
+          <button type="button" class="btn-blue" name="button">НОВИНКИ</button>
+          <button type="button" class="btn-green" name="button">ХИТЫ</button>
+          <button type="button" class="btn-red" name="button">РАСПРОДАЖА</button>
+        </div>
+        <div class="product-list flexslider">
+          <!--foreach $arresult-->
+
+          <div class="item new">
+            <div class="cell">
+              <div class="pic">
+                <a href="#" title="Прицеп M3C11 4556467">
+                  <img src="./images/promo-img.png" alt="">
+                </a>
+              </div>
+              <div class="name">
+                <a href="#" title="Прицеп M3C11 4556467">Прицеп M3C11 4556467</a>
+              </div>
+              <div class="price">
+                <span>Цена: </span><b>2 000 &#8381;</b>
+              </div>
+              <div class="order">
+                <button type="button" name="button">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item hit">
+            <div class="cell">
+              <div class="pic">
+                <a href="#" title="Прицеп M3C11 4556467">
+                  <img src="./images/promo-img.png" alt="">
+                </a>
+              </div>
+              <div class="name">
+                <a href="#" title="Прицеп M3C11 4556467">Прицеп M3C11 4556467</a>
+              </div>
+              <div class="price">
+                <span>Цена: </span><b>2 000 &#8381;</b>
+              </div>
+              <div class="order">
+                <button type="button" name="button">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item sold">
+            <div class="cell">
+              <div class="pic">
+                <a href="#" title="Прицеп M3C11 4556467">
+                  <img src="./images/promo-img.png" alt="">
+                </a>
+              </div>
+              <div class="name">
+                <a href="#" title="Прицеп M3C11 4556467">Прицеп M3C11 4556467</a>
+              </div>
+              <div class="price">
+                <span>Цена: </span><b>2 000 &#8381;</b>
+              </div>
+              <div class="order">
+                <button type="button" name="button">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item ">
+            <div class="cell">
+              <div class="pic">
+                <a href="#" title="Прицеп M3C11 4556467">
+                  <img src="./images/promo-img.png" alt="">
+                </a>
+              </div>
+              <div class="name">
+                <a href="#" title="Прицеп M3C11 4556467">Прицеп M3C11 4556467</a>
+              </div>
+              <div class="price">
+                <span>Цена: </span><b>2 000 &#8381;</b>
+              </div>
+              <div class="order">
+                <button type="button" name="button">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item new">
+            <div class="cell">
+              <div class="pic">
+                <a href="#" title="Прицеп M3C11 4556467">
+                  <img src="./images/promo-img.png" alt="">
+                </a>
+              </div>
+              <div class="name">
+                <a href="#" title="Прицеп M3C11 4556467">Прицеп M3C11 4556467</a>
+              </div>
+              <div class="price">
+                <span>Цена: </span><b>2 000 &#8381;</b>
+              </div>
+              <div class="order">
+                <button type="button" name="button">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item hit">
+            <div class="cell">
+              <div class="pic">
+                <a href="#" title="Прицеп M3C11 4556467">
+                  <img src="./images/promo-img.png" alt="">
+                </a>
+              </div>
+              <div class="name">
+                <a href="#" title="Прицеп M3C11 4556467">Прицеп M3C11 4556467</a>
+              </div>
+              <div class="price">
+                <span>Цена: </span><b>2 000 &#8381;</b>
+              </div>
+              <div class="order">
+                <button type="button" name="button">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item sold">
+            <div class="cell">
+              <div class="pic">
+                <a href="#" title="Прицеп M3C11 4556467">
+                  <img src="./images/promo-img.png" alt="">
+                </a>
+              </div>
+              <div class="name">
+                <a href="#" title="Прицеп M3C11 4556467">Прицеп M3C11 4556467</a>
+              </div>
+              <div class="price">
+                <span>Цена: </span><b>2 000 &#8381;</b>
+              </div>
+              <div class="order">
+                <button type="button" name="button">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item ">
+            <div class="cell">
+              <div class="pic">
+                <a href="#" title="Прицеп M3C11 4556467">
+                  <img src="./images/promo-img.png" alt="">
+                </a>
+              </div>
+              <div class="name">
+                <a href="#" title="Прицеп M3C11 4556467">Прицеп M3C11 4556467</a>
+              </div>
+              <div class="price">
+                <span>Цена: </span><b>2 000 &#8381;</b>
+              </div>
+              <div class="order">
+                <button type="button" name="button">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item new">
+            <div class="cell">
+              <div class="pic">
+                <a href="#" title="Прицеп M3C11 4556467">
+                  <img src="./images/promo-img.png" alt="">
+                </a>
+              </div>
+              <div class="name">
+                <a href="#" title="Прицеп M3C11 4556467">Прицеп M3C11 4556467</a>
+              </div>
+              <div class="price">
+                <span>Цена: </span><b>2 000 &#8381;</b>
+              </div>
+              <div class="order">
+                <button type="button" name="button">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item hit">
+            <div class="cell">
+              <div class="pic">
+                <a href="#" title="Прицеп M3C11 4556467">
+                  <img src="./images/promo-img.png" alt="">
+                </a>
+              </div>
+              <div class="name">
+                <a href="#" title="Прицеп M3C11 4556467">Прицеп M3C11 4556467</a>
+              </div>
+              <div class="price">
+                <span>Цена: </span><b>2 000 &#8381;</b>
+              </div>
+              <div class="order">
+                <button type="button" name="button">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item sold">
+            <div class="cell">
+              <div class="pic">
+                <a href="#" title="Прицеп M3C11 4556467">
+                  <img src="./images/promo-img.png" alt="">
+                </a>
+              </div>
+              <div class="name">
+                <a href="#" title="Прицеп M3C11 4556467">Прицеп M3C11 4556467</a>
+              </div>
+              <div class="price">
+                <span>Цена: </span><b>2 000 &#8381;</b>
+              </div>
+              <div class="order">
+                <button type="button" name="button">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item ">
+            <div class="cell">
+              <div class="pic">
+                <a href="#" title="Прицеп M3C11 4556467">
+                  <img src="./images/promo-img.png" alt="">
+                </a>
+              </div>
+              <div class="name">
+                <a href="#" title="Прицеп M3C11 4556467">Прицеп M3C11 4556467</a>
+              </div>
+              <div class="price">
+                <span>Цена: </span><b>2 000 &#8381;</b>
+              </div>
+              <div class="order">
+                <button type="button" name="button">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+
+          <!--endforeach-->
+        </div>
+      </div>
+    </div>
+    <!--end component promo-->
+
+    <!--start about area-->
+    <div class="wrapper bg-texture about-company">
+      <div class="container">
+        <div class="row text-center">
+          <h2>О КОМПАНИИ</h2>
+        </div>
+        <div class="row clearfix">
+          <div class="video">
+            video
+          </div>
+          <div class="about-text">
+            <p>Мы работаем со многими известными и надежными производителями легковых прицепов и можем предложить нашим покупателям очень широкий выбор. Перевозка внедорожной техники представлена в нашем каталоге прицепами для снегоходов, квадроциклов и
+              мотоциклов (в т.ч. легковыми прицепами для двух мотоциклов). Для транспортировки водномоторной техники предлагаются легковые прицепы для лодок, катеров и гидроциклов, в т.ч. "тяжеловесы", способные "принять" катер или яхту длиной до 9,5
+              м и весом до 4100 кг.</p>
+
+            <p>Самый большой раздел каталога - легковые прицепы для перевозки грузов, имеется множество вариантов по габаритным размерам, грузоподъемности и иным характеристикам. Специальные прицепы представлены легковыми прицепами - автовозами, предназначенными
+              для перевозки легковых авто весом от 900 до 2700 кг. В отдельном разделе мы собрали прицепы с пластиковыми крышками и прицепы-фургоны.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end about area-->
 
   </main>
   <footer>
@@ -64,29 +404,8 @@
   </footer>
   <script src="./libs/jquery/js/jquery.min.js"></script>
   <!--libs:js-->
-
-  <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
-
   <script src="./libs/bxslider/js/jquery.bxslider.js"></script>
-
-  <script src="./libs/drawer/js/simpleDrawer.js"></script>
-
-  <script src="./libs/fancybox/js/jquery.fancybox.pack.js"></script>
-
-  <script src="./libs/formValidator/js/jquery.form-validator.min.js"></script>
-
-  <script src="./libs/fullpage/js/jquery.fullpage.min.js"></script>
-
-  <script src="./libs/icheck/js/icheck.min.js"></script>
-
-  <script src="./libs/msgBox/js/lobibox.min.js"></script>
-
-  <script src="./libs/placeholder/js/jquery.textPlaceholder.js"></script>
-
-  <script src="./libs/select/js/selectize.min.js"></script>
-
   <script src="./libs/slick/js/slick.min.js"></script>
-
   <!--endinject-->
   <!--dev:js-->
   <script src="./js/main.js"></script>

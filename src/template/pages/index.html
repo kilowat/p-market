@@ -1,4 +1,104 @@
-{% extends './../layouts/master.html' %} 
+{% extends './../layouts/master.html' %}
 {% block content %}
-	index page
+	<!--start component slider-->
+	<div class="form-order container">
+		<div class="form-order-wrapper">
+			<div class="form-header">
+				<h2>Оставить заявку</h2>
+				<span class="form-text">
+					Оставьте заявку и наш менеджер
+свяжется с вами в ближайшее время
+				</span>
+			</div>
+			<form class="" action="index.html" method="post">
+				<div class="row">
+					<input type="text" name="name" value="" placeholder="ИМЯ И ФАМИЛИЯ">
+				</div>
+				<div class="row">
+					<input type="text" name="phone" value="" placeholder="НОМЕР ТЕЛЕФОНА">
+				</div>
+				<div class="row">
+					<input type="text" name="email" value="" placeholder="E-MAIL">
+				</div>
+				<div class="row">
+					<textarea name="text" placeholder="ТЕКСТ ЗАПРОСА"></textarea>
+				</div>
+				<div class="row">
+					<button type="button" name="button">ОСТАВИТЬ ЗАЯВКУ</button>
+				</div>
+			</form>
+		</div>
+
+	</div>
+	<div id="slider">
+		<a href="#" title="slider" style="background-image:url(./images/slide.jpg)">
+
+		</a>
+		<a href="#" title="slider" style="background-image:url(./images/slide.jpg)">
+
+		</a>
+		<a href="#" title="slider" style="background-image:url(./images/slide.jpg)">
+
+		</a>
+		<a href="#" title="slider" style="background-image:url(./images/slide.jpg)">
+
+		</a>
+	</div>
+	<!--end component slider-->
+
+	<!--start component promo-->
+	<div class="wrapper-promo">
+		<div class="promo container">
+			<div class="row filter">
+				<button type="button" class="btn-blue" name="button">НОВИНКИ</button>
+				<button type="button" class="btn-green" name="button">ХИТЫ</button>
+				<button type="button" class="btn-red" name="button">РАСПРОДАЖА</button>
+			</div>
+			<div class="product-list flexslider">
+				<!--foreach $arresult-->
+				{% for item in promoItems %}
+				<div class="item {{ item.promo }}">
+					<div class="cell">
+						<div class="pic">
+							<a href="#" title="{{ item.name }}">
+								<img src="{{ item.img }}" alt="">
+							</a>
+						</div>
+						<div class="name">
+							<a href="#" title="{{ item.name }}">{{ item.name }}</a>
+						</div>
+						<div class="price">
+							<span>Цена: </span><b>{{ item.price }} &#8381;</b>
+						</div>
+						<div class="order">
+							<button type="button" name="button">Отправить заявку</button>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+				<!--endforeach-->
+			</div>
+		</div>
+	</div>
+	<!--end component promo-->
+
+	<!--start about area-->
+	<div class="wrapper bg-texture about-company">
+		<div class="container">
+			<div class="row text-center">
+				<h2>О КОМПАНИИ</h2>
+			</div>
+			<div class="row clearfix">
+				<div class="video">
+					video
+				</div>
+				<div class="about-text">
+					<p>Мы работаем со многими известными и надежными производителями легковых прицепов и можем предложить нашим покупателям очень широкий выбор. Перевозка внедорожной техники представлена в нашем каталоге прицепами для снегоходов, квадроциклов и мотоциклов (в т.ч. легковыми прицепами для двух мотоциклов). Для транспортировки водномоторной техники предлагаются легковые прицепы для лодок, катеров и гидроциклов, в т.ч. "тяжеловесы", способные "принять" катер или яхту длиной до 9,5 м и весом до 4100 кг.</p>
+
+					<p>Самый большой раздел каталога - легковые прицепы для перевозки грузов, имеется множество вариантов по габаритным размерам, грузоподъемности и иным характеристикам. Специальные прицепы представлены легковыми прицепами - автовозами, предназначенными для перевозки легковых авто весом от 900 до 2700 кг. В отдельном разделе мы собрали прицепы с пластиковыми крышками и прицепы-фургоны.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end about area-->
 {% endblock %}

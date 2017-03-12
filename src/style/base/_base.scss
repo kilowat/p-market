@@ -1,8 +1,27 @@
+html{
+  font-size:14px;
+  font-family: $roboto;
+}
 .container{
   margin: 0 auto;
   padding-left: $padding;
   padding-right: $padding;
   max-width: $max-width;
   min-width: $min-width;
+  @include clearfix();
+}
+i{
+  display: inline-block;
+}
+.table{
+  display: table;
+}
+.table-row{
+  display: table-row;
+}
+.table-cell{
+  display: table-cell;
+}
+.clearfix{
   @include clearfix();
 }

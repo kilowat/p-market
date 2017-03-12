@@ -1,0 +1,208 @@
+.wrapper-promo{
+  background-color: #f3f3f3;
+  .promo{
+    position: relative;
+    .filter{
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 35px;
+      button{
+        height: 52px;
+        width: 202px;
+        margin-top:3px;
+        margin-bottom: 3px;
+        &:nth-child(2){
+          margin-left: 25px;
+          margin-right: 25px;
+        }
+      }
+    }
+    .product-list{
+      background-color: #f3f3f3;
+      border:0;
+      padding-left: 20px;
+      padding-right: 20px;
+      .item{
+        background-color: #f3f3f3;
+        height: 275px;
+        padding-bottom: 5px;
+        position: relative;
+        @include breakpoint(max-width 380px){
+          text-align: center;
+        }
+        .cell{
+          background-color: #fff;
+          margin: 5px;
+          padding: 10px;
+          .pic{
+            text-align: center;
+            img{
+              max-width: 100%;
+            }
+            a{
+              display: inline-block;
+            }
+          }
+          .name{
+            margin-top:7px;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+            font-weight: 300;
+            overflow: hidden;
+            height: 30px;
+            a{
+              color: #000;
+              text-decoration: none;
+            }
+          }
+          .price{
+            font-weight: 500;
+            span{
+              font-weight: 1.1rem;
+            }
+            b{
+              font-size: 1.3rem;
+            }
+          }
+          .order{
+            text-align: center;
+            margin-top:13px;
+            button{
+              height: 40px;
+              width: 100%;
+              border: 1px solid #06873d;
+              color: #06873d;
+              text-transform: uppercase;
+              font-size: 0.8rem;
+              font-weight: 600;
+              cursor: pointer;
+              background-color: transparent;
+              &:hover{
+                color: #e61b20;
+                border:1px solid #e61b20;
+              }
+            }
+          }
+        }
+      }
+      @mixin promo(){
+        display: block;
+        content: "";
+        position: absolute;
+        top:0;
+        right: 0;
+      }
+      .new{
+        &:after{
+          @include sprite($ic-new);
+          @include promo();
+        }
+      }
+      .hit{
+        &:after{
+          @include sprite($ic-hit);
+          @include promo();
+        }
+      }
+      .sold{
+        &:after{
+          @include sprite($ic-sold);
+          @include promo();
+        }
+      }
+    }
+    .slick-prev{
+      position: absolute;
+      left: -4px;
+      z-index: 3;
+      top: 40%;
+      width: 17px;
+      height: 45px;
+      cursor: pointer;
+      background-color: transparent;
+      border: 0;
+      font-size: 0px;
+      &:before{
+        display: block;
+        content: "";
+        position: absolute;
+        height: 25px;
+        width: 3px;
+        background-color: #ccc;
+        transform: rotate(-35deg);
+        top: 15px;
+      }
+      &:after{
+        display: block;
+        content: "";
+        position: absolute;
+        height: 25px;
+        width: 3px;
+        background-color: #ccc;
+        transform: rotate(35deg);
+        top: -5px;
+      }
+    }
+    .slick-next{
+      position: absolute;
+      right: -4px;
+      z-index: 3;
+      top: 40%;
+      width: 17px;
+      height: 45px;
+      cursor: pointer;
+      background-color: transparent;
+      border: 0;
+      font-size: 0px;
+      &:before{
+        display: block;
+        content: "";
+        position: absolute;
+        height: 25px;
+        width: 3px;
+        background-color: #ccc;
+        transform: rotate(35deg);
+        top: 15px;
+      }
+      &:after{
+        display: block;
+        content: "";
+        position: absolute;
+        height: 25px;
+        width: 3px;
+        background-color: #ccc;
+        transform: rotate(-35deg);
+        top: -5px;
+      }
+    }
+    .slick-dots{
+      text-align: center;
+      margin-top:27px;
+      li{
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+        button{
+          font-size: 0;
+          line-height: 0;
+          display: block;
+          width: 4px;
+          height: 4px;
+          padding: 4px;
+          cursor: pointer;
+          color: transparent;
+          border: 0;
+          outline: none;
+          background: transparent;
+          border: 1px solid #ccc;
+          border-radius: 100%;
+        }
+        &.slick-active{
+          button{
+          border: 1px solid #3da067;
+          }
+        }
+      }
+    }
+  }
+}

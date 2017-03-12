@@ -5,3 +5,16 @@
     clear: both;
   }
 }
+@mixin colorButton($border, $bg, $shadow){
+  border: 1px solid $border;
+  border-radius: 4px;
+  background-color: $bg,;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0px 2px 0px 1px $shadow;
+  cursor: pointer;
+  &:hover, .selected{
+    background-color: darken($bg, 10);
+  }
+}

@@ -1,0 +1,79 @@
+.ic-squares{
+  position: relative;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  top:1px;
+  right: -9px;
+
+  @mixin square(){
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 4px;
+    border: 1px solid white;
+    content: "";
+  }
+  i{
+    &:first-child{
+      &:before{
+        @include square;
+        left: 0;
+        top: 0;
+      }
+      &:after{
+        @include square;
+        right: 0;
+        top: 0;
+      }
+    }
+    &:last-child{
+      &:before{
+        @include square;
+        left: 0;
+        bottom: 0;
+      }
+      &:after{
+        @include square;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
+.ic-search{
+  @include sprite($ic-search);
+}
+.ic-home{
+  @include sprite($ic-home);
+}
+.ic-fb{
+  @include sprite($ic-fb);
+  &:hover{
+    @include sprite($ic-fb-hover);
+  }
+}
+.ic-inst{
+  @include sprite($ic-inst);
+  &:hover{
+    @include sprite($ic-inst-hover);
+  }
+}
+.ic-ytube{
+  @include sprite($ic-ytube);
+  &:hover{
+    @include sprite($ic-ytube-hover);
+  }
+}
+.ic-tel{
+  @include sprite($ic-tel);
+  &:hover{
+    @include sprite($ic-tel-hover);
+  }
+}
+.ic-vk{
+  @include sprite($ic-vk);
+  &:hover{
+    @include sprite($ic-vk-hover);
+  }
+}

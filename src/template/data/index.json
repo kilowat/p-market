@@ -1,3 +1,77 @@
 {
-	"title":"New project"
+	"title":"Прицеп маркет",
+	"promoItems":[
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "new"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "hit"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "sold"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": ""
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "new"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "hit"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "sold"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": ""
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "new"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "hit"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "sold"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": ""
+		}
+	]
 }

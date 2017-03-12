@@ -1,0 +1,101 @@
+#slider{
+  a{
+    height: 450px;
+    width: 100%;
+  }
+}
+.bx-wrapper{
+  padding: 0;
+  box-shadow: none;
+  border: 0;
+}
+.bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url('#{$img}/bx_loader.gif') center center no-repeat #ffffff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+.form-order{
+  position: relative;
+  .form-order-wrapper{
+    position: absolute;
+    height: 407px;
+    width: 247px;
+    z-index: 2;
+    background-color: red;
+    right: 50px;
+    top: 18px;
+    background-color: #da3838;
+    background-image: url('#{$img}/bg-form.png');
+    border-bottom: 2px solid #ca312f;
+    border-radius: 4px;
+    box-shadow: 0px 5px 0px 0px #e61b20;
+    padding-left: 2.7em;
+    padding-right: 2.7em;
+    .form-header{
+      font-family: $rubik;
+      text-align: center;
+      margin-top:1.3rem;
+      color: #fff;
+      h2{
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    }
+    .form-text{
+      font-family: $rubik;
+      font-weight: 300;
+      line-height: 1.1rem;
+    }
+    .row{
+      margin-top: 7px;
+      margin-bottom: 7px;
+      &:first-child{
+        margin-top:16px;
+      }
+      &:last-child{
+        text-align: center;
+      }
+      input[type=text]{
+        height: 45px;
+        box-sizing: border-box;
+        width: 100%;
+        border: 1px solid #b5302d;
+        border-radius: 4px;
+        padding-left: 7%;
+        font-size: 1.1em;
+        font-family: $roboto;
+        color: #6f6f6f;
+      }
+      textarea{
+        width: 100%;
+        box-sizing: border-box;
+        height: 80px;
+        padding-top:15px;
+        font-size: 1.1em;
+        padding-left: 7%;
+        border-radius: 4px;
+        border: 1px solid #b5302d;
+        font-family: $roboto;
+        color: #6f6f6f;
+      }
+      button{
+        border: 1px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        height: 48px;
+        width: 99%;
+        border-radius: 2px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-top: 0.4rem;
+      }
+    }
+  }
+}

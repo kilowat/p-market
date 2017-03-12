@@ -1,0 +1,13 @@
+.bg-texture{
+  background-image: url(#{$img}/texture-bg.jpg);
+}
+.about-company{
+  .video{
+    float: left;
+    width: 60%;
+  }
+  .about-text{
+    float: right;
+    width: 37%;
+  }
+}
