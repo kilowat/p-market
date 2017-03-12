@@ -2,12 +2,43 @@
   background-image: url(#{$img}/texture-bg.jpg);
 }
 .about-company{
+  padding-bottom: 43px;
   .video{
     float: left;
     width: 60%;
+    background-color: #ccc;
+    height: 467px;
+    @include breakpoint(max-width $display-normal){
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
   }
   .about-text{
     float: right;
     width: 37%;
+    @include breakpoint(max-width $display-normal){
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+    .detail-link{
+      font-size: 1.2rem;
+      color: #000;
+      display: inline-block;
+      margin-top: 15px;
+    }
+  }
+  .soc-links{
+    margin-top: 65px;
+    *{
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+    span{
+      font-weight: 300;
+    }
   }
 }
