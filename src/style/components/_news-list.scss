@@ -13,6 +13,19 @@
       height: 180px;
       background-size: cover;
       @include gallery(1 of 5 0);
+      @include breakpoint((max-width $display-normal)  (min-width $display-mini)){
+        @include gallery(1 of 3 0);
+      }
+
+      @include breakpoint((max-width $display-smallest) (min-width $display-mini)){
+        @include gallery(1 of 2 0);
+      }
+      @include breakpoint(max-width $display-mini){
+        margin:0!important;
+        width: 100%;
+        float: none;
+        @include gallery(1 of 1);
+      }
       color: #fff;
       text-decoration: none;
       position: relative;
@@ -58,6 +71,10 @@
           }
           .text{
             display: inline-block;
+            @include breakpoint(max-width 1005px){
+              font-size: 1rem;
+              line-height: 1.3rem;
+            }
           }
         }
       }

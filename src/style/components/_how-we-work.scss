@@ -6,17 +6,10 @@
   .how-we-work-list{
     margin-top:70px;
     @include container;
-    .item{
-      @include span(1 of 5 0.05 inset);
-      position: relative;
-      &:after{
-        display: block;
-        position: absolute;
-        content: "";
-        @include sprite($ic-big-arrow);
-        top: 50px;
-        right: 0px;
-      }
+    @include breakpoint(max-width 815px){
+      text-align: center;
+    }
+    .item-wrapper{
       @mixin number($number){
         display: block;
         color: #e7e7e7;
@@ -25,61 +18,103 @@
         font-family: $rubik;
         font-weight: 600;
         margin-left: 15px;
+        @include breakpoint(max-width 900px){
+          font-size: 10em;
+        }
+        @include breakpoint(max-width 815px){
+          font-size: 12em;
+        }
       }
       &:first-child{
-        &:before{
-          @include number(1);
+        .item{
+          &:before{
+            @include number(1);
+          }
         }
       }
       &:nth-child(2){
-        &:before{
-          @include number(2);
+        .item{
+          &:before{
+            @include number(2);
+          }
         }
       }
       &:nth-child(3){
-        &:before{
-          @include number(3);
-        }
-        &:after{
-          display: block;
-          position: absolute;
-          content: "";
-          @include sprite($ic-big-arrow);
-          top: 50px;
-          right: -10px;
-        }
-        .pic{
-          right: 35px;
+        .item{
+          &:before{
+            @include number(3);
+          }
+          &:after{
+            display: block;
+            position: absolute;
+            content: "";
+            @include sprite($ic-big-arrow);
+            top: 50px;
+            right: -10px;
+          }
+          .pic{
+            right: 35px;
+          }
         }
       }
       &:nth-child(4){
-        &:after{
-          display: block;
-          position: absolute;
-          content: "";
-          @include sprite($ic-big-arrow);
-          top: 50px;
-          right: -15px;
-        }
-        &:before{
-          @include number(4);
-        }
-        .pic{
-          right: 20px;
+        .item{
+          &:after{
+            display: block;
+            position: absolute;
+            content: "";
+            @include sprite($ic-big-arrow);
+            top: 50px;
+            right: -15px;
+          }
+          &:before{
+            @include number(4);
+          }
+          .pic{
+            right: 20px;
+          }
         }
       }
       &:nth-child(5){
-        @include last;
-        &:after{
-          display: none;
-        }
-        .pic{
-          right: 20px;
-        }
-        &:before{
+        .item{
+          @include last;
+          &:after{
+            display: none;
+          }
+          .pic{
+            right: 20px;
+          }
+          &:before{
 
-          @include number(5);
+            @include number(5);
+          }
         }
+      }
+    }
+    .item{
+      @include span(1 of 5 0.05 inset);
+      @include breakpoint(max-width 815px){
+        float:none!important;
+        margin: 0;
+        display: inline-block;
+        width: 40%;
+        margin-bottom:30px;
+        &:after{
+          top: auto!important;
+          bottom: -25px;
+          transform: rotate(90deg)!important;
+          position: relative !important;
+          display: inline-block !important;
+        }
+      }
+      position: relative;
+      &:after{
+        display: block;
+        position: absolute;
+        content: "";
+        @include sprite($ic-big-arrow);
+        top: 50px;
+        right: 0px;
       }
       .pic{
         position: absolute;
