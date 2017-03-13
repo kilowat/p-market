@@ -1,0 +1,52 @@
+.news-list{
+  h2{
+    padding-bottom: 25px;
+  }
+  .block-text{
+    margin-bottom: 42px;
+  }
+  .news-element-list{
+    @include container;
+    .item{
+      height: 180px;
+      background-size: cover;
+      @include gallery(1 of 5 0);
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      &:before{
+        display: block;;
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        opacity: 0.4;
+      }
+      .cell{
+        padding: 15px;
+        height: 150px;
+        position: relative;
+        .name{
+          font-family: $rubik;
+          margin-top: 30px;
+          font-size: 1.3rem;
+          font-weight: 400;
+        }
+        .date{
+
+        }
+        .text{
+
+        }
+      }
+    }
+  }
+  .other-news-link{
+    margin-top: 39px;
+    display: inline-block;
+    font-size: 1.25rem;
+    color: #000;
+    font-weight: 300;
+  }
+}

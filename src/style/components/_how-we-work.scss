@@ -1,0 +1,98 @@
+.wrapper-how-work{
+  padding-bottom: 60px;
+  .header-block{
+    padding-bottom: 0.7em;
+  }
+  .how-we-work-list{
+    margin-top:70px;
+    @include container;
+    .item{
+      @include span(1 of 5 0.05 inset);
+      position: relative;
+      &:after{
+        display: block;
+        position: absolute;
+        content: "";
+        @include sprite($ic-big-arrow);
+        top: 50px;
+        right: 0px;
+      }
+      @mixin number($number){
+        display: block;
+        color: #e7e7e7;
+        content: "#{$number}";
+        font-size: 12em;
+        font-family: $rubik;
+        font-weight: 600;
+        margin-left: 15px;
+      }
+      &:first-child{
+        &:before{
+          @include number(1);
+        }
+      }
+      &:nth-child(2){
+        &:before{
+          @include number(2);
+        }
+      }
+      &:nth-child(3){
+        &:before{
+          @include number(3);
+        }
+        &:after{
+          display: block;
+          position: absolute;
+          content: "";
+          @include sprite($ic-big-arrow);
+          top: 50px;
+          right: -10px;
+        }
+        .pic{
+          right: 35px;
+        }
+      }
+      &:nth-child(4){
+        &:after{
+          display: block;
+          position: absolute;
+          content: "";
+          @include sprite($ic-big-arrow);
+          top: 50px;
+          right: -15px;
+        }
+        &:before{
+          @include number(4);
+        }
+        .pic{
+          right: 20px;
+        }
+      }
+      &:nth-child(5){
+        @include last;
+        &:after{
+          display: none;
+        }
+        .pic{
+          right: 20px;
+        }
+        &:before{
+
+          @include number(5);
+        }
+      }
+      .pic{
+        position: absolute;
+        top: 65px;
+        right: 54px;
+      }
+      .name{
+        margin-top: 14px;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 1.4rem;
+      }
+    }
+  }
+}
