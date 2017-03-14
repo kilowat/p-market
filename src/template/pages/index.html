@@ -97,7 +97,7 @@
 
 					<p>Самый большой раздел каталога - легковые прицепы для перевозки грузов, имеется множество вариантов по габаритным размерам, грузоподъемности и иным характеристикам. Специальные прицепы представлены легковыми прицепами - автовозами, предназначенными для перевозки легковых авто весом от 900 до 2700 кг. В отдельном разделе мы собрали прицепы с пластиковыми крышками и прицепы-фургоны.</p>
 					<div>
-						<a href="#" class="detail-link" title="Подробнее">Подробнее</a>
+						<a href="#" class="detail-link link-see-detail" title="Подробнее">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -152,7 +152,7 @@
 				</div>
 			</div>
 			<div class="row text-center">
-				<a href="#" title="Другие услуги" class="other-service-link">Другие услуги</a>
+				<a href="#" title="Другие услуги" class="other-service-link link-see-detail">Другие услуги</a>
 			</div>
 		</div>
 	</div>
@@ -286,9 +286,123 @@
 				<!--endforeach-->
 			</div>
 			<div class="row text-center">
-				<a href="#" class="other-news-link" title="Все новости">Все новости</a>
+				<a href="#" class="other-news-link link-see-detail" title="Все новости">Все новости</a>
 			</div>
 		</div>
 	</div>
 	<!--end component news-->
+
+	<!--start component brands-->
+	<div class="wrapper brands">
+		<div class="container">
+			<div class="row text-center">
+				<h2 class="header-block">БРЕНДЫ</h2>
+				<div class="block-text">
+					В нашем каталоге представлена продукция самых передовых брендов<br>автомобильных прицепов и легкой моторной техники
+				</div>
+			</div>
+			<div class="brands-list">
+				<!--foreach $arRreslut-->
+				<a class="item" title="brands" href="#">
+					<img src="./images/brands.png" alt="">
+				</a>
+				<a class="item" title="brands" href="#">
+					<img src="./images/brands-2.png" alt="">
+				</a>
+				<a class="item" title="brands" href="#">
+					<img src="./images/brands.png" alt="">
+				</a>
+				<a class="item" title="brands" href="#">
+					<img src="./images/brands.png" alt="">
+				</a>
+				<a class="item" title="brands" href="#">
+					<img src="./images/brands.png" alt="">
+				</a>
+				<a class="item" title="brands" href="#">
+					<img src="./images/brands.png" alt="">
+				</a>
+				<a class="item" title="brands" href="#">
+					<img src="./images/brands.png" alt="">
+				</a>
+				<a class="item" title="brands" href="#">
+					<img src="./images/brands.png" alt="">
+				</a>
+				<!--endforeach-->
+			</div>
+		</div>
+	</div>
+	<!--end component brands-->
+
+	<!--start info component-->
+	<div class="info wrapper">
+		<div class="container">
+			<div class="row text-center">
+				<h2 class="header-block">
+					ПОЛЕЗНАЯ ИНФОРМАЦИЯ
+				</h2>
+				<div class="block-text">
+					Покупая прицеп, дом на колесах или различную моторную технику<br>Вы не останетесь с ней один на один
+				</div>
+			</div>
+			<div class="info-list">
+				<!--foreach $arResult-->
+				<div class="item">
+					<div class="pic">
+						<img src="../images/product-img.png" alt="">
+					</div>
+					<div class="info-content">
+						<div class="name">
+							<a href="#" title="#">Заголовок новости</a>
+						</div>
+						<div class="date">22.01.2017</div>
+						<div class="text">
+							Мы работаем со многими известными и надежными производителями легковых прицепов
+						</div>
+						<div class="detail-link">
+							<a href="#" title="Подробнее" class="link-see-detail">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="pic">
+						<img src="../images/product-img.png" alt="">
+					</div>
+					<div class="info-content">
+						<div class="name">
+							<a href="#" title="#">Заголовок новости</a>
+						</div>
+						<div class="date">22.01.2017</div>
+						<div class="text">
+							Мы работаем со многими известными и надежными производителями легковых прицепов
+						</div>
+						<div class="detail-link">
+							<a href="#" title="Подробнее" class="link-see-detail">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="pic">
+						<img src="../images/product-img.png" alt="">
+					</div>
+					<div class="info-content">
+						<div class="name">
+							<a href="#" title="#">Заголовок новости</a>
+						</div>
+						<div class="date">22.01.2017</div>
+						<div class="text">
+							Мы работаем со многими известными и надежными производителями легковых прицепов
+						</div>
+						<div class="detail-link">
+							<a href="#" title="Подробнее" class="link-see-detail">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<!--endforeach-->
+			</div>
+			<div class="row text-center">
+				<a href="#" class="link-see-detail" title="Все материалы">Все материалы</a>
+			</div>
+		</div>
+	</div>
+	<!--end info component-->
 {% endblock %}

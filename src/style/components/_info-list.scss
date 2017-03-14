@@ -1,0 +1,58 @@
+.info{
+  .header-block{
+    padding-top: 105px;
+    padding-bottom: 22px;
+  }
+  .block-text{
+    padding-bottom: 73px;
+  }
+  .info-list{
+    @include container;
+    padding-bottom: 21px;
+    .item{
+      @include gallery(1 of 3 0.1);
+      @include clearfix;
+      .pic{
+        float: left;
+        width: 45%;
+        margin-right: 3%;
+      }
+      .info-content{
+        float:left;
+        width: 52%;
+        .name{
+          a{
+            color: #000;
+            text-decoration: none;
+            font-size: 1.23rem;
+            font-family: $rubik;
+          }
+        }
+        .date{
+          position: relative;
+          margin-top: 20px;
+          margin-bottom: 7px;
+          font-size: 1.23rem;
+          font-family: $rubik;
+          &:after{
+            display: block;
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 43%;
+            background-color: #000;
+            top: -13px;
+          }
+        }
+        .text{
+          font-weight: 300;
+          line-height: 1.4rem;
+          font-size: 1.1rem;
+        }
+        .link-see-detail{
+          margin-top:22px;
+        }
+      }
+    }
+  }
+}

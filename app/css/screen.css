@@ -89,6 +89,84 @@ i {
   clear: both;
 }
 
+.slick-next {
+  position: absolute;
+  right: -4px;
+  z-index: 3;
+  top: 40%;
+  width: 17px;
+  height: 45px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  font-size: 0px;
+}
+
+.slick-next:before {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 3px;
+  background-color: #ccc;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+  top: 15px;
+}
+
+.slick-next:after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 3px;
+  background-color: #ccc;
+  -webkit-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+  top: -5px;
+}
+
+.slick-prev {
+  position: absolute;
+  left: -4px;
+  z-index: 3;
+  top: 40%;
+  width: 17px;
+  height: 45px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  font-size: 0px;
+}
+
+.slick-prev:before {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 3px;
+  background-color: #ccc;
+  -webkit-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+  top: 15px;
+}
+
+.slick-prev:after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 3px;
+  background-color: #ccc;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+  top: -5px;
+}
+
 p {
   margin-bottom: 1.3rem;
   line-height: 1.42rem;
@@ -108,6 +186,14 @@ h2.header-block {
 .block-text {
   font-size: 1.49em;
   font-weight: 300;
+}
+
+.link-see-detail {
+  display: inline-block;
+  font-size: 1.25rem;
+  color: #000;
+  font-weight: 300;
+  margin-top: 39px;
 }
 
 .ic-squares {
@@ -324,7 +410,7 @@ header .contact-block .callback {
 header .contact-block .callback a {
   color: #06873d;
   text-decoration: none;
-  font-size: 1.05rem;
+  font-size: 1.00rem;
   border-bottom: 1px dashed;
 }
 
@@ -1105,84 +1191,6 @@ html[xmlns] .flexslider .slides {
   right: 0;
 }
 
-.wrapper-promo .promo .slick-prev {
-  position: absolute;
-  left: -4px;
-  z-index: 3;
-  top: 40%;
-  width: 17px;
-  height: 45px;
-  cursor: pointer;
-  background-color: transparent;
-  border: 0;
-  font-size: 0px;
-}
-
-.wrapper-promo .promo .slick-prev:before {
-  display: block;
-  content: "";
-  position: absolute;
-  height: 25px;
-  width: 3px;
-  background-color: #ccc;
-  -webkit-transform: rotate(-35deg);
-  -ms-transform: rotate(-35deg);
-  transform: rotate(-35deg);
-  top: 15px;
-}
-
-.wrapper-promo .promo .slick-prev:after {
-  display: block;
-  content: "";
-  position: absolute;
-  height: 25px;
-  width: 3px;
-  background-color: #ccc;
-  -webkit-transform: rotate(35deg);
-  -ms-transform: rotate(35deg);
-  transform: rotate(35deg);
-  top: -5px;
-}
-
-.wrapper-promo .promo .slick-next {
-  position: absolute;
-  right: -4px;
-  z-index: 3;
-  top: 40%;
-  width: 17px;
-  height: 45px;
-  cursor: pointer;
-  background-color: transparent;
-  border: 0;
-  font-size: 0px;
-}
-
-.wrapper-promo .promo .slick-next:before {
-  display: block;
-  content: "";
-  position: absolute;
-  height: 25px;
-  width: 3px;
-  background-color: #ccc;
-  -webkit-transform: rotate(35deg);
-  -ms-transform: rotate(35deg);
-  transform: rotate(35deg);
-  top: 15px;
-}
-
-.wrapper-promo .promo .slick-next:after {
-  display: block;
-  content: "";
-  position: absolute;
-  height: 25px;
-  width: 3px;
-  background-color: #ccc;
-  -webkit-transform: rotate(-35deg);
-  -ms-transform: rotate(-35deg);
-  transform: rotate(-35deg);
-  top: -5px;
-}
-
 .wrapper-promo .promo .slick-dots {
   text-align: center;
   margin-top: 27px;
@@ -1218,14 +1226,6 @@ html[xmlns] .flexslider .slides {
 .wrapper-catalog {
   background-color: #f8f8f8;
   padding-bottom: 50px;
-}
-
-.wrapper-catalog .other-service-link {
-  margin-top: 39px;
-  display: inline-block;
-  font-size: 1.25rem;
-  color: #000;
-  font-weight: 300;
 }
 
 .catalog-list {
@@ -1532,6 +1532,10 @@ html[xmlns] .flexslider .slides {
   line-height: 1.4rem;
 }
 
+.news-list {
+  padding-bottom: 43px;
+}
+
 .news-list h2 {
   padding-bottom: 25px;
 }
@@ -1751,12 +1755,127 @@ html[xmlns] .flexslider .slides {
   display: none;
 }
 
-.news-list .other-news-link {
-  margin-top: 39px;
+.brands .header-block {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.brands .block-text {
+  padding-bottom: 76px;
+}
+
+.brands .brands-list {
+  position: relative;
+}
+
+.brands .brands-list .slick-arrow {
+  top: 7%;
+}
+
+.brands .brands-list .item {
+  text-align: center;
+}
+
+.brands .brands-list .item img {
   display: inline-block;
-  font-size: 1.25rem;
+}
+
+.info .header-block {
+  padding-top: 105px;
+  padding-bottom: 22px;
+}
+
+.info .block-text {
+  padding-bottom: 73px;
+}
+
+.info .info-list {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 21px;
+}
+
+.info .info-list:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.info .info-list .item {
+  width: 31.25%;
+  float: left;
+}
+
+.info .info-list .item:nth-child(3n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+
+.info .info-list .item:nth-child(3n + 2) {
+  margin-left: 34.375%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.info .info-list .item:nth-child(3n + 3) {
+  margin-left: 68.75%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.info .info-list .item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.info .info-list .item .pic {
+  float: left;
+  width: 45%;
+  margin-right: 3%;
+}
+
+.info .info-list .item .info-content {
+  float: left;
+  width: 52%;
+}
+
+.info .info-list .item .info-content .name a {
   color: #000;
+  text-decoration: none;
+  font-size: 1.23rem;
+  font-family: "Rubik";
+}
+
+.info .info-list .item .info-content .date {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 7px;
+  font-size: 1.23rem;
+  font-family: "Rubik";
+}
+
+.info .info-list .item .info-content .date:after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 43%;
+  background-color: #000;
+  top: -13px;
+}
+
+.info .info-list .item .info-content .text {
   font-weight: 300;
+  line-height: 1.4rem;
+  font-size: 1.1rem;
+}
+
+.info .info-list .item .info-content .link-see-detail {
+  margin-top: 22px;
 }
 
 /* BEGIN Thin */
