@@ -1,4 +1,5 @@
 .info{
+  padding-bottom: 45px;
   .header-block{
     padding-top: 105px;
     padding-bottom: 22px;
@@ -12,14 +13,32 @@
     .item{
       @include gallery(1 of 3 0.1);
       @include clearfix;
+      @include breakpoint(max-width $display-small){
+        @include gallery(1 of 1);
+        margin-bottom: 20px;
+        text-align: center;
+      }
       .pic{
         float: left;
         width: 45%;
         margin-right: 3%;
+        @include breakpoint(max-width $display-small){
+          float: none;
+          margin:0;
+          width: 100%;
+        }
+        img{
+          max-width: 100%;
+        }
       }
       .info-content{
         float:left;
         width: 52%;
+        @include breakpoint(max-width $display-small){
+          float: none;
+          margin:0;
+          width: 100%;
+        }
         .name{
           a{
             color: #000;
@@ -34,14 +53,16 @@
           margin-bottom: 7px;
           font-size: 1.23rem;
           font-family: $rubik;
+          display: inline-block;
           &:after{
             display: block;
             content: "";
             position: absolute;
             height: 2px;
-            width: 43%;
+            width: 70px;
             background-color: #000;
             top: -13px;
+            left: 2px;
           }
         }
         .text{

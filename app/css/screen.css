@@ -1780,6 +1780,10 @@ html[xmlns] .flexslider .slides {
   display: inline-block;
 }
 
+.info {
+  padding-bottom: 45px;
+}
+
 .info .header-block {
   padding-top: 105px;
   padding-bottom: 22px;
@@ -1832,15 +1836,49 @@ html[xmlns] .flexslider .slides {
   clear: both;
 }
 
+@media (max-width: 820px) {
+  .info .info-list .item {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .info .info-list .item:nth-child(1n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
 .info .info-list .item .pic {
   float: left;
   width: 45%;
   margin-right: 3%;
 }
 
+@media (max-width: 820px) {
+  .info .info-list .item .pic {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.info .info-list .item .pic img {
+  max-width: 100%;
+}
+
 .info .info-list .item .info-content {
   float: left;
   width: 52%;
+}
+
+@media (max-width: 820px) {
+  .info .info-list .item .info-content {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .info .info-list .item .info-content .name a {
@@ -1856,6 +1894,7 @@ html[xmlns] .flexslider .slides {
   margin-bottom: 7px;
   font-size: 1.23rem;
   font-family: "Rubik";
+  display: inline-block;
 }
 
 .info .info-list .item .info-content .date:after {
@@ -1863,9 +1902,10 @@ html[xmlns] .flexslider .slides {
   content: "";
   position: absolute;
   height: 2px;
-  width: 43%;
+  width: 70px;
   background-color: #000;
   top: -13px;
+  left: 2px;
 }
 
 .info .info-list .item .info-content .text {
@@ -1876,6 +1916,41 @@ html[xmlns] .flexslider .slides {
 
 .info .info-list .item .info-content .link-see-detail {
   margin-top: 22px;
+}
+
+.payment .header-block {
+  padding-bottom: 0.8em;
+}
+
+.payment .block-text {
+  padding-bottom: 62px;
+}
+
+.payment .pay-list {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.payment .pay-list:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.payment .pay-list .item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 16%;
+}
+
+.payment .pay-list .item .name {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* BEGIN Thin */

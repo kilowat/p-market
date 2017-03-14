@@ -1,0 +1,28 @@
+.payment{
+  .header-block{
+    padding-bottom: 0.8em;
+  }
+  .block-text{
+    padding-bottom: 62px;
+  }
+
+  .pay-list{
+    @include container;
+    padding-bottom: 20px;
+    .item{
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      width: 16%;
+      .pic{
+
+      }
+      .name{
+        font-size: 1.2rem;
+        margin-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+}
