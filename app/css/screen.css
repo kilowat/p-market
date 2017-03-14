@@ -1918,6 +1918,10 @@ html[xmlns] .flexslider .slides {
   margin-top: 22px;
 }
 
+.payment {
+  padding-bottom: 40px;
+}
+
 .payment .header-block {
   padding-bottom: 0.8em;
 }
@@ -1930,7 +1934,7 @@ html[xmlns] .flexslider .slides {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .payment .pay-list:after {
@@ -1951,6 +1955,73 @@ html[xmlns] .flexslider .slides {
   margin-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.reviews {
+  padding-bottom: 40px;
+}
+
+.reviews .header-block {
+  padding-bottom: 28px;
+}
+
+.reviews .block-text {
+  margin-bottom: 52px;
+}
+
+.reviews .reviews-list {
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+}
+
+.reviews .reviews-list .item {
+  display: inline-block;
+}
+
+.reviews .reviews-list .item .cell:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.reviews .reviews-list .item .cell .pic {
+  float: left;
+  width: 121px;
+  margin-right: 15px;
+}
+
+.reviews .reviews-list .item .cell .text {
+  float: left;
+  width: 52%;
+  text-align: left;
+}
+
+.reviews .reviews-list .item .cell .name {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.reviews .reviews-list .item .cell .comment {
+  font-size: 1.15rem;
+  font-weight: 300;
+  line-height: 1.4rem;
+}
+
+.reviews .reviews-list .item .cell .company {
+  margin-top: 12px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.reviews .reviews-list .item .cell .detail-link {
+  margin-top: 0px;
+}
+
+.reviews .reviews-list .item .cell .detail-link .link-see-detail {
+  margin-top: 18px;
 }
 
 /* BEGIN Thin */

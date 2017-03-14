@@ -1,0 +1,52 @@
+.reviews{
+  padding-bottom: 40px;
+  .header-block{
+    padding-bottom: 28px;
+  }
+  .block-text{
+    margin-bottom: 52px;
+  }
+  .reviews-list{
+    text-align: center;
+    padding-left:25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    .item{
+      display: inline-block;
+      .cell{
+        @include clearfix;
+        .pic{
+          float: left;
+          width: 121px;
+          margin-right: 15px;
+        }
+        .text{
+          float: left;
+          width: 52%;
+          text-align: left;
+        }
+        .name{
+          font-size:1.3rem;
+          margin-bottom:10px;
+        }
+        .comment{
+          font-size: 1.15rem;
+          font-weight: 300;
+          line-height: 1.4rem;
+        }
+        .company{
+          margin-top:12px;
+          font-size: 1.4rem;
+          font-weight: 300;
+          font-style: italic;
+        }
+        .detail-link{
+          margin-top: 0px;
+          .link-see-detail{
+            margin-top:18px;
+          }
+        }
+      }
+    }
+  }
+}

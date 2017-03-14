@@ -40,7 +40,7 @@ $(document).ready(function(){
   ]
   });
 
-    $('.brands .brands-list').slick({
+  $('.brands .brands-list').slick({
       slidesToShow: 5,
       slidesToScroll: 5,
       responsive: [
@@ -74,4 +74,33 @@ $(document).ready(function(){
       }
     ]
     });
+
+    $('.reviews .reviews-list').slick({
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+      {
+        breakpoint: 920,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll:2
+        }
+      },
+      {
+        breakpoint: 740,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 590,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        },
+      },
+    ]
+  });
+
 });
