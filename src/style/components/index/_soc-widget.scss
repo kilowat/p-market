@@ -1,0 +1,17 @@
+.soc-widgets{
+  .header-block{
+    padding-bottom: 22px;
+  }
+  .block-text{
+    padding-bottom: 20px;
+  }
+  .widget-list{
+      @include container;
+      text-align: center;
+      margin-top: 30px;
+    .item{
+      display: inline-block;
+      @include span(1 of 3 0);
+    }
+  }
+}

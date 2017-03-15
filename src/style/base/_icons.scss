@@ -77,3 +77,15 @@
     @include sprite($ic-vk-hover);
   }
 }
+.ic-phone{
+  @include sprite($ic-phone);
+}
+.ic-email{
+  @include sprite($ic-email);
+}
+.ic-point{
+  @include sprite($ic-point);
+}
+.ic-time{
+  @include sprite($ic-time);
+}

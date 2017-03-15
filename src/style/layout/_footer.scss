@@ -1,0 +1,56 @@
+.footer-block{
+  margin-top: 43px;
+  height: 265px;
+  background-color: #252525;
+  padding-top: 23px;
+  .footer-block-container{
+    @include container;
+    .bottom-menu{
+      float: left;
+      width: 41%;
+      ul{
+        display: inline-block;
+        &:first-child{
+          margin-right: 30px;
+        }
+        li{
+          margin-bottom: 14px;
+          &:first-child{
+            margin-bottom: 0;
+          }
+          a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+          }
+          b{
+            font-size: 1.1rem;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            display: inline-block;
+            font-weight: 500;
+            font-family: $rubik;
+          }
+        }
+      }
+    }
+    .spam{
+      float: left;
+      width: 29.2%;
+      b{
+        font-size: 1.1rem;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        display: inline-block;
+        font-weight: 500;
+        font-family: $rubik;
+      }
+    }
+    .bottom-contact{
+      float: right;
+      width: 28%;
+    }
+  }
+}

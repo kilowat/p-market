@@ -1,0 +1,69 @@
+#ya-map{
+  height: 453px;
+  background-color: #ccc;
+  .container{
+    position: relative;
+  }
+  .map-panel{
+    color: #fff;
+    position: absolute;
+    width: 252px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: red;
+    height: 405px;
+    right: 50px;
+    position: absolute;
+    z-index: 2;
+    background-color: red;
+    right: 50px;
+    top: -15px;
+    background-color: #da3838;
+    background-image: url("#{$img}/bg-form.png");
+    border-bottom: 2px solid #ca312f;
+    border-top: 2px solid #ca312f;
+    border-radius: 4px 0px 4px 4px;
+    box-shadow: 0px 4px 5px 0px rgba(204, 204, 204, 0.4) inset;
+    &:before{
+      display: block;
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px 0 0 15px;
+      border-color: transparent transparent transparent #c9302e;
+      right: -15px;
+      top: -2px;
+    }
+    .header{
+      text-align: center;
+      margin-top:45px;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+    ul{
+      li{
+        display: table-row;
+        .cell{
+          padding-top:35px;
+          vertical-align: middle;
+          display: table-cell;
+          font-size: 1.4rem;
+          line-height: 1.6rem;
+          &:first-child{
+            text-align: center;
+            padding-right: 20px;
+          }
+          a{
+            color: #fff;
+          }
+        }
+        &:nth-child(2){
+          .cell{
+          }
+        }
+      }
+    }
+  }
+}
