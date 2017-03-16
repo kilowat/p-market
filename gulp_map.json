@@ -114,5 +114,28 @@
 		"js":[
 			"src/libs/flexslider/js/jquery.flexslider-min.js"
 		]
-	}
+	},
+	"numberInput":{
+		"js":[
+			"src/libs/numberInput/js/number_input.js"
+		]
+	},
+	"jqueryUi":{
+	 	"js":[
+	 	  "src/libs/jqueryui/js/jquery-ui.min.js"
+	 	],
+		 "css":[
+		 "src/libs/jqueryui/css/jquery-ui.min.css"
+		 ]
+	},
+	"sliderLimit":{
+		 "js":[
+		 		"src/libs/sliderlimit/js/jquery.limitslider.js"
+		 ]
+	},
+	"cookie":{
+		"js":[
+			"src/libs/cookie/js/js.cookie.js"
+	 ]
+ }
 }

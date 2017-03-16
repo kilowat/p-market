@@ -1,0 +1,22 @@
+.bx-breadcrumb{
+  >*{
+    display: inline-block;
+  }
+  padding-top: 28px;
+  font-size: 1.05rem;
+  span{
+    color: #06873d;
+  }
+  a{
+    color: #000;
+    span{
+      color: #000;
+    }
+    &:hover{
+      color: #06873d;
+      span{
+        color: #06873d;
+      }
+    }
+  }
+}

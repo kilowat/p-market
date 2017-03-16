@@ -1,6 +1,7 @@
 @import 'search';
 @import 'index/simpleDrawer';
 @import 'top-menu';
+@import "breadcrumb";
 @import 'index/main-slider';
 @import "index/flexslider";
 @import "index/promo-slider";
@@ -13,3 +14,6 @@
 @import "index/reviews-list";
 @import "index/map";
 @import "index/soc-widget";
+@import "catalog/catalog-product-list";
+@import "left-menu";
+@import "filter";

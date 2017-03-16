@@ -102,5 +102,23 @@ $(document).ready(function(){
       },
     ]
   });
+  //set input number
+  $('input[type=number]').iLightInputNumber();
 
+  //run checkbox
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_flat',
+    radioClass: 'iradio_flat'
+  });
+
+  //customize select
+  $('select').selectize();
+
+  //dorp down btn
+  $('.drop-down-btn').click(function () {
+    var self = $(this);
+    $(self.next()).slideToggle('fast', function () {
+      self.toggleClass('selected');
+    });
+  });
 });

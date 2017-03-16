@@ -101,3 +101,15 @@
 .ic-time-mini{
   @include sprite($ic-time-mini);
 }
+.ic_arrow-up2 {
+  @include sprite($ic_arrow_up2);
+}
+.arrow-down2{
+  @include sprite($arrow-down2);
+}
+.ic_arrow_up2-hover{
+  @include sprite($ic_arrow_up2-hover);
+}
+.ic_arrow-down2-hover{
+  @include sprite($ic_arrow-down2-hover);
+}

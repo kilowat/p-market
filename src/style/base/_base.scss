@@ -94,3 +94,34 @@ a{
     color: $link-hover-color;
   }
 }
+html, body {
+  height: 100%;
+}
+
+html,main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+.section-header{
+  margin-top: 35px;
+  margin-bottom: 40px;
+  font-size: 2.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $rubik;
+  font-weight: 300;
+}
+footer,
+.push {
+  height: 4em;
+}
+.left.sidebar{
+  float: left;
+  width: 23%;
+}
+.right.content{
+  float: right;
+  width: 76%;
+}
