@@ -1,4 +1,8 @@
 .top-menu{
+  @include breakpoint(max-width $display-normal){
+    display: none;
+    margin:0;
+  }
   ul{
     display:table;
     li{
@@ -15,6 +19,9 @@
         text-decoration: none;
         font-size: 0.9rem;
         color: #000;
+        &:hover, .selected{
+          color: $link-hover-color;
+        }
         @include breakpoint(max-width 1030px){
           padding-left: 4px;
           padding-right: 4px;

@@ -89,3 +89,15 @@
 .ic-time{
   @include sprite($ic-time);
 }
+.ic-phone-mini{
+  @include sprite($ic-phone-mini);
+}
+.ic-email-mini{
+  @include sprite($ic-email-mini);
+}
+.ic-point-mini{
+  @include sprite($ic-point-mini);
+}
+.ic-time-mini{
+  @include sprite($ic-time-mini);
+}

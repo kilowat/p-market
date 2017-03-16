@@ -1,11 +1,18 @@
 .footer-block{
   margin-top: 43px;
-  height: 265px;
+  min-height: 265px;
   background-color: #252525;
   padding-top: 23px;
+  padding-bottom: 10px;
+  @include breakpoint(max-width $display-normal){
+    text-align: center;
+  }
   .footer-block-container{
     @include container;
     .bottom-menu{
+      @include breakpoint(max-width $display-normal){
+        display: none;
+      }
       float: left;
       width: 41%;
       ul{
@@ -22,6 +29,9 @@
             color: #fff;
             text-decoration: none;
             font-size: 1.1rem;
+            &:hover{
+              color: $link-hover-color;
+            }
           }
           b{
             font-size: 1.1rem;
@@ -38,19 +48,115 @@
     .spam{
       float: left;
       width: 29.2%;
+      @include breakpoint(max-width $display-normal){
+        float: none;
+        display: inline-block;
+      }
       b{
         font-size: 1.1rem;
         color: #fff;
         text-transform: uppercase;
-        margin-bottom: 20px;
+        margin-bottom: 17px;
         display: inline-block;
         font-weight: 500;
         font-family: $rubik;
       }
+      .spam-form{
+        .row{
+          margin-bottom: 10px;
+          input[type=text], button{
+            height: 44px;
+            width: 245px;
+            padding-left: 10px;
+            font-size: 1rem;
+            border-radius: 4px;
+            box-sizing: border-box;
+            border: 0px;
+          }
+          button{
+            background-color: transparent;
+            border:1px solid #fff;
+            color: #fff;
+            cursor: pointer;
+            &:hover{
+              border: 1px solid $link-hover-color;
+              color: $link-hover-color;
+            }
+          }
+        }
+        .spam-off{
+          width: 245px;
+          a{
+            color: #fff;
+            display: inline-block;
+            margin-top: 7px;
+            font-size: 1.1rem;
+            &:hover{
+              color: $link-hover-color;
+            }
+          }
+        }
+      }
     }
     .bottom-contact{
+      @include breakpoint(max-width $display-normal){
+        display: none;
+      }
+      padding-top: 32px;
       float: right;
-      width: 28%;
+      width: 29%;
+      .contact-list{
+        color: #fff;
+        padding-top: 26px;
+        font-size: 1.1rem;
+        li{
+          display: table-row;
+          .cell{
+            padding-top: 6px;
+            padding-bottom: 6px;
+            vertical-align: middle;
+            display: table-cell;
+            a{
+              color: #fff;
+            }
+            &:first-child{
+              padding-right: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.bottom-block{
+  background-color: #0f0f0f;
+  min-height: 64px;
+  border-top: 2px #000;
+  color: #b7b7b7;
+  font-size: 1.1rem;
+  padding-top: 15px;
+  line-height: 1.3rem;
+  @include breakpoint(max-width $display-normal){
+    text-align: center;
+  }
+  a{
+    color:#b7b7b7;
+    &:hover{
+      color: $link-hover-color;
+    }
+  }
+  .coop{
+    float: left;
+    @include breakpoint(max-width $display-normal){
+      float: none;
+      margin-bottom: 10px;
+    }
+  }
+  .created-by{
+    float: right;
+    @include breakpoint(max-width $display-normal){
+      float: none;
+      margin-bottom: 10px;
     }
   }
 }
