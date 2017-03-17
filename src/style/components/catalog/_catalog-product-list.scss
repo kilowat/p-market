@@ -1,3 +1,4 @@
+
 .catalog{
   .product-list{
     background-color: #f3f3f3;
@@ -10,8 +11,8 @@
       height: 285px;
       padding-bottom: 15px;
       position: relative;
-      @include breakpoint(max-width 380px){
-        text-align: center;
+      @include breakpoint(max-width $display-normal){
+        @include gallery(1 of 3 0);
       }
       .cell{
         background-color: #fff;
