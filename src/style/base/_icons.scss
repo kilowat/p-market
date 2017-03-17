@@ -113,3 +113,12 @@
 .ic_arrow-down2-hover{
   @include sprite($ic_arrow-down2-hover);
 }
+.ic-arrow-r{
+  @include sprite($ic-arrow-r);
+}
+.ic-arrow-r-green{
+  @include sprite($ic-arrow-r-green);
+}
+.ic-arrow-r-white{
+  @include sprite($ic-arrow-r-white);
+}

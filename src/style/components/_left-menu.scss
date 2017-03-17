@@ -1,5 +1,42 @@
 .left-menu{
-  height: 350px;
   margin-bottom: 25px;
   background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  border: 1px solid #e1e1e1;
+  ul{
+    li{
+      &:last-child{
+        a{
+          border-bottom: 3px solid #e1e1e1;
+        }
+      }
+      a{
+        font-size: 1.1rem;
+        border-bottom: 1px solid #e1e1e1;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: block;
+        text-decoration: none;
+        color: #000;
+        &:hover{
+          background-color: #e72025;
+          color: #fff;
+          i{
+            @include sprite($ic-arrow-r-white);
+          }
+        }
+        &.selected{
+          color: #06873d;
+          i{
+              @include sprite($ic-arrow-r-green);
+          }
+        }
+        i{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
 }

@@ -207,6 +207,10 @@ footer,
   width: 76%;
 }
 
+.text-right {
+  text-align: right;
+}
+
 p {
   margin-bottom: 1.3rem;
   line-height: 1.42rem;
@@ -309,70 +313,70 @@ h2.header-block {
 
 .ic-fb {
   background-image: url(../images/sprite.png);
-  background-position: -180px -128px;
+  background-position: -90px -146px;
   width: 32px;
   height: 32px;
 }
 
 .ic-fb:hover {
   background-image: url(../images/sprite.png);
-  background-position: -180px -64px;
+  background-position: -147px -90px;
   width: 32px;
   height: 32px;
 }
 
 .ic-inst {
   background-image: url(../images/sprite.png);
-  background-position: -122px -146px;
+  background-position: -180px -64px;
   width: 32px;
   height: 32px;
 }
 
 .ic-inst:hover {
   background-image: url(../images/sprite.png);
-  background-position: -90px -146px;
+  background-position: -180px -32px;
   width: 32px;
   height: 32px;
 }
 
 .ic-ytube {
   background-image: url(../images/sprite.png);
-  background-position: -147px -90px;
+  background-position: -180px -96px;
   width: 32px;
   height: 32px;
 }
 
 .ic-ytube:hover {
   background-image: url(../images/sprite.png);
-  background-position: -180px -32px;
+  background-position: -115px -90px;
   width: 32px;
   height: 32px;
 }
 
 .ic-tel {
   background-image: url(../images/sprite.png);
-  background-position: 0px -180px;
+  background-position: -180px -128px;
   width: 32px;
   height: 32px;
 }
 
 .ic-tel:hover {
   background-image: url(../images/sprite.png);
-  background-position: -180px 0px;
+  background-position: 0px -180px;
   width: 32px;
   height: 32px;
 }
 
 .ic-vk {
   background-image: url(../images/sprite.png);
-  background-position: -115px -90px;
+  background-position: -180px 0px;
   width: 32px;
   height: 32px;
 }
 
 .ic-vk:hover {
   background-image: url(../images/sprite.png);
-  background-position: -180px -96px;
+  background-position: -122px -146px;
   width: 32px;
   height: 32px;
 }
@@ -435,30 +439,51 @@ h2.header-block {
 
 .ic_arrow-up2 {
   background-image: url(../images/sprite.png);
-  background-position: -220px -144px;
-  width: 8px;
+  background-position: -212px -154px;
+  width: 10px;
   height: 5px;
 }
 
 .arrow-down2 {
   background-image: url(../images/sprite.png);
-  background-position: -212px -149px;
-  width: 8px;
+  background-position: -212px -159px;
+  width: 10px;
   height: 5px;
 }
 
 .ic_arrow_up2-hover {
   background-image: url(../images/sprite.png);
-  background-position: -212px -144px;
-  width: 8px;
+  background-position: -212px -149px;
+  width: 10px;
   height: 5px;
 }
 
 .ic_arrow-down2-hover {
   background-image: url(../images/sprite.png);
-  background-position: -221px -135px;
-  width: 8px;
+  background-position: -212px -144px;
+  width: 10px;
   height: 5px;
+}
+
+.ic-arrow-r {
+  background-image: url(../images/sprite.png);
+  background-position: -225px -79px;
+  width: 5px;
+  height: 10px;
+}
+
+.ic-arrow-r-green {
+  background-image: url(../images/sprite.png);
+  background-position: -225px -69px;
+  width: 5px;
+  height: 10px;
+}
+
+.ic-arrow-r-white {
+  background-image: url(../images/sprite.png);
+  background-position: -225px -89px;
+  width: 5px;
+  height: 10px;
 }
 
 @media (max-width: 980px) {
@@ -1589,7 +1614,7 @@ html[xmlns] .flexslider .slides {
 
 .wrapper-promo .promo .product-list .new:after {
   background-image: url(../images/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -90px;
   width: 90px;
   height: 90px;
   display: block;
@@ -1601,7 +1626,7 @@ html[xmlns] .flexslider .slides {
 
 .wrapper-promo .promo .product-list .hit:after {
   background-image: url(../images/sprite.png);
-  background-position: 0px -90px;
+  background-position: -90px 0px;
   width: 90px;
   height: 90px;
   display: block;
@@ -1613,7 +1638,7 @@ html[xmlns] .flexslider .slides {
 
 .wrapper-promo .promo .product-list .sold:after {
   background-image: url(../images/sprite.png);
-  background-position: -90px 0px;
+  background-position: 0px 0px;
   width: 90px;
   height: 90px;
   display: block;
@@ -2624,7 +2649,9 @@ html[xmlns] .flexslider .slides {
 
 .catalog .product-list .item .cell {
   background-color: #fff;
-  margin: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
   padding: 10px;
 }
 
@@ -2709,7 +2736,7 @@ html[xmlns] .flexslider .slides {
 
 .catalog .product-list .new:after {
   background-image: url(../images/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -90px;
   width: 90px;
   height: 90px;
   display: block;
@@ -2721,7 +2748,7 @@ html[xmlns] .flexslider .slides {
 
 .catalog .product-list .hit:after {
   background-image: url(../images/sprite.png);
-  background-position: 0px -90px;
+  background-position: -90px 0px;
   width: 90px;
   height: 90px;
   display: block;
@@ -2733,7 +2760,7 @@ html[xmlns] .flexslider .slides {
 
 .catalog .product-list .sold:after {
   background-image: url(../images/sprite.png);
-  background-position: -90px 0px;
+  background-position: 0px 0px;
   width: 90px;
   height: 90px;
   display: block;
@@ -2744,28 +2771,75 @@ html[xmlns] .flexslider .slides {
 }
 
 .left-menu {
-  height: 350px;
   margin-bottom: 25px;
   background-color: #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  border: 1px solid #e1e1e1;
+}
+
+.left-menu ul li:last-child a {
+  border-bottom: 3px solid #e1e1e1;
+}
+
+.left-menu ul li a {
+  font-size: 1.1rem;
+  border-bottom: 1px solid #e1e1e1;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.left-menu ul li a:hover {
+  background-color: #e72025;
+  color: #fff;
+}
+
+.left-menu ul li a:hover i {
+  background-image: url(../images/sprite.png);
+  background-position: -225px -89px;
+  width: 5px;
+  height: 10px;
+}
+
+.left-menu ul li a.selected {
+  color: #06873d;
+}
+
+.left-menu ul li a.selected i {
+  background-image: url(../images/sprite.png);
+  background-position: -225px -69px;
+  width: 5px;
+  height: 10px;
+}
+
+.left-menu ul li a i {
+  margin-right: 10px;
 }
 
 .filter {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   margin-bottom: 25px;
+  border: 1px solid #e1e1e1;
+  background-color: #fff;
 }
 
 .filter .block {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #b9b9bb;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .filter .block .input-row {
-  padding-bottom: 2px;
-  padding-top: 2px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .filter .block .input-row label {
@@ -2786,12 +2860,20 @@ html[xmlns] .flexslider .slides {
 
 .filter .block.price .price-inputs {
   text-align: center;
+  display: table;
+  width: 100%;
 }
 
 .filter .block.price .price-inputs .default-input {
   width: 70%;
   display: inline-block;
   text-align: center;
+}
+
+.filter .block.price .price-inputs input[type=text] {
+  height: 25px;
+  width: 70%;
+  border: 1px solid #b8b8bc;
 }
 
 .filter .block .price-slider-row {
@@ -2804,6 +2886,7 @@ html[xmlns] .flexslider .slides {
   border-bottom: 1px dashed;
   color: #0096d7;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .filter .block .reset-filter:hover {
@@ -2820,10 +2903,46 @@ html[xmlns] .flexslider .slides {
   margin-top: 10px;
 }
 
+.filter .ic_arrow-up2:hover {
+  background-image: url(../images/sprite.png);
+  background-position: -212px -149px;
+  width: 10px;
+  height: 5px;
+}
+
 .filter .ic_arrow-up2.selected {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  background-image: url(../images/sprite.png);
+  background-position: -212px -159px;
+  width: 10px;
+  height: 5px;
+}
+
+.filter .ic_arrow-up2.selected:hover {
+  background-image: url(../images/sprite.png);
+  background-position: -212px -144px;
+  width: 10px;
+  height: 5px;
+}
+
+.filter .show-all {
+  height: 40px !important;
+  width: 80%;
+  border: 1px solid #06873d;
+  color: #06873d;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+.filter .show-all:hover {
+  border: 1px solid #bd0005;
+  background-color: #e61b20;
+  color: #fff;
+  -webkit-box-shadow: 0px 1px 0px 1px #bd0005;
+  box-shadow: 0px 1px 0px 1px #bd0005;
 }
 
 #set-filter {
@@ -3827,8 +3946,8 @@ html[xmlns] .flexslider .slides {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   background-image: url(../images/sprite.png);
-  background-position: -220px -144px;
-  width: 8px;
+  background-position: -212px -154px;
+  width: 10px;
   height: 5px;
 }
 

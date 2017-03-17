@@ -1,15 +1,17 @@
 .filter {
     @include border-radius;
     margin-bottom: 25px;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
     .block {
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 10px;
-      padding-top: 10px;
-      border-bottom: 1px solid #b9b9bb;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-bottom: 1px solid #e1e1e1;
       .input-row {
-        padding-bottom: 2px;
-        padding-top: 2px;
+        padding-bottom: 5px;
+        padding-top: 5px;
         label {
           padding-left: 4px;
           font-weight: 200;
@@ -27,10 +29,17 @@
       &.price {
         .price-inputs {
           text-align: center;
+          display: table;
+          width: 100%;
           .default-input {
             width: 70%;
             display: inline-block;
             text-align: center
+          }
+          input[type=text]{
+            height: 25px;
+            width: 70%;
+            border: 1px solid #b8b8bc;
           }
         }
       }
@@ -43,6 +52,7 @@
         border-bottom: 1px dashed;
         color: #0096d7;
         cursor: pointer;
+        margin-top: 10px;
         &:hover {
           color: $link-hover-color;
         }
@@ -55,8 +65,32 @@
       cursor: pointer;
       float: right;
       margin-top: 10px;
+      &:hover{
+        @include sprite($ic_arrow-up2-hover);
+      }
       &.selected {
-        transform: rotate(180deg);
+        @include sprite($arrow-down2);
+        &:hover{
+          @include sprite($ic_arrow-down2-hover);
+        }
+      }
+    }
+    .show-all{
+      height: 40px!important;
+      width: 80%;
+      border: 1px solid #06873d;
+      color: #06873d;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      background-color: transparent;
+      margin-bottom: 10px;
+      &:hover{
+        border: 1px solid #bd0005;
+        background-color: #e61b20,;
+        color: #fff;
+        box-shadow: 0px 1px 0px 1px #bd0005;
       }
     }
   }
