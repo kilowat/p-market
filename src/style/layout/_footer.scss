@@ -51,6 +51,7 @@
       @include breakpoint(max-width $display-normal){
         float: none;
         display: inline-block;
+        width: 100%;
       }
       b{
         font-size: 1.1rem;
@@ -86,6 +87,10 @@
         }
         .spam-off{
           width: 245px;
+          @include breakpoint(max-width $display-normal){
+            display: inline-block;
+            width: 100%;
+          }
           a{
             color: #fff;
             display: inline-block;

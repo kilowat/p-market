@@ -3,6 +3,11 @@ $(document).ready(function(){
 
   $('#slider').bxSlider({pager:false, controls:false, adaptiveHeight:false, responsive:false});
 
+  $('.slider-product .bxslider').bxSlider({
+    pagerCustom: '#bx-pager',
+    controls: false,
+  });
+
   $('.promo .product-list').slick({
     infinite: true,
     dots: true,
@@ -102,6 +107,34 @@ $(document).ready(function(){
       },
     ]
   });
+  $('.detail-product-reviews .reviews-list').slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    responsive: [
+    {
+      breakpoint: 920,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll:2
+      }
+    },
+    {
+      breakpoint: 740,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 590,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      },
+    },
+  ]
+});
+
   //set input number
   $('input[type=number]').iLightInputNumber();
 

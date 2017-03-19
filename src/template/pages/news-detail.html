@@ -1,0 +1,73 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+<div class="container">
+  <!--start component breadcrumbs-->
+    {% include './../components/breadcrumb.html' %}
+  <!--end component breadrumbs-->
+  <!--start component section header-->
+  <h1 class="section-header">
+    Новость детальная
+  </h1>
+  <!--start component news detail-->
+  <div class="news-detail">
+    <img src="./images/news-detail.png" class="pic" alt="">
+    <div class="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p><p>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p><p>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p><p>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+  <!--start photo gallery-->
+  <div class="photo-list">
+    <a href="#" title="">
+      <img src="./images/photo.png" alt="">
+    </a>
+    <a href="#" title="">
+      <img src="./images/photo.png" alt="">
+    </a>
+    <a href="#" title="">
+      <img src="./images/photo.png" alt="">
+    </a>
+    <a href="#" title="">
+      <img src="./images/photo.png" alt="">
+    </a>
+    <a href="#" title="">
+      <img src="./images/photo.png" alt="">
+    </a>
+  </div>
+  <!--end photo gallery-->
+  <!--end component news detail-->
+</div>
+<!--start component dop-product-->
+<div class="dop-product wrapper">
+  <div class="container">
+    <h2 class="header-block text-center">Рекомендовано к покупке</h2>
+    <div class="product-list">
+      <!--foreach $arresult-->
+      {% for item in promoItems %}
+      <div class="item {{ item.promo }}">
+        <div class="cell">
+          <div class="pic">
+            <a href="#" title="{{ item.name }}">
+              <img src="{{ item.img }}" alt="">
+            </a>
+          </div>
+          <div class="name">
+            <a href="#" title="{{ item.name }}">{{ item.name }}</a>
+          </div>
+          <div class="price">
+            <span>Цена: </span><b>{{ item.price }} &#8381;</b><br>
+            <span class="old-price">{{ item.old_price }} &#8381;</span>
+          </div>
+          <div class="order">
+            <button type="button" name="button">Отправить заявку</button>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <!--end foreach -->
+    </div>
+  </div>
+</div>
+<!--endcomponent dop-product-->
+{% endblock %}

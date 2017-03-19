@@ -1,0 +1,71 @@
+{
+  "title": "Новости",
+  "newsItems":[
+    {
+      "pic": "./images/news-img.png",
+      "name": "Заголовок новости",
+      "date": "22.01.2016",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+      "pic": "./images/news-img.png",
+      "name": "Заголовок новости",
+      "date": "22.01.2016",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+      "pic": "./images/news-img.png",
+      "name": "Заголовок новости",
+      "date": "22.01.2016",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+      "pic": "./images/news-img.png",
+      "name": "Заголовок новости",
+      "date": "22.01.2016",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+      "pic": "./images/news-img.png",
+      "name": "Заголовок новости",
+      "date": "22.01.2016",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+      "pic": "./images/news-img.png",
+      "name": "Заголовок новости",
+      "date": "22.01.2016",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+      "pic": "./images/news-img.png",
+      "name": "Заголовок новости",
+      "date": "22.01.2016",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+      "pic": "./images/news-img.png",
+      "name": "Заголовок новости",
+      "date": "22.01.2016",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+      "pic": "./images/news-img.png",
+      "name": "Заголовок новости",
+      "date": "22.01.2016",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+      "pic": "./images/news-img.png",
+      "name": "Заголовок новости",
+      "date": "22.01.2016",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+      "pic": "./images/news-img.png",
+      "name": "Заголовок новости",
+      "date": "22.01.2016",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+    }
+  ]
+}

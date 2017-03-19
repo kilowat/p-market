@@ -1,0 +1,36 @@
+.news-detail{
+  @include breakpoint(max-width $display-normal){
+    text-align: center;
+  }
+  .pic{
+    float: left;
+    margin-right: 10px;
+    max-width: 100%;
+    @include breakpoint(max-width $display-normal){
+      float: none;
+    }
+  }
+  .text{
+    line-height: 1.5rem;
+    font-weight: 300;
+    font-size: 1.1rem;
+  }
+}
+.photo-list{
+  @include container;
+  a{
+    @include gallery(1 of 5 0.1);
+    @include breakpoint(max-width 685px){
+      @include gallery(1 of 3 0.1);
+      margin-bottom: 2%;
+    }
+    @include breakpoint(max-width 450px){
+      @include gallery(1 of 2 0.1);
+      margin-bottom: 2%;
+    }
+    box-sizing: border-box;
+    img{
+      max-width: 100%;
+    }
+  }
+}

@@ -1,18 +1,24 @@
-.reviews{
+.reviews-page{
   padding-bottom: 75px;
-  .header-block{
-    padding-bottom: 28px;
-  }
-  .block-text{
-    margin-bottom: 52px;
-  }
   .reviews-list{
     text-align: center;
-    padding-left:25px;
-    padding-right: 25px;
     padding-bottom: 20px;
+    @include container;
+    @include breakpoint(max-width 670px){
+      text-align: center;
+    }
     .item{
-      display: inline-block;
+      @include gallery(1 of 3 0.05);
+      @include breakpoint(max-width 940px){
+        @include gallery(1 of 2 0.05);
+      }
+      @include breakpoint(max-width 670px){
+        @include gallery(1 of 1 0);
+        margin-left: 0!important;
+        margin-right: 0!important;
+        text-align: center;
+      }
+      margin-bottom: 50px;
       .cell{
         @include clearfix;
         .pic{
@@ -25,7 +31,7 @@
         }
         .text{
           float: left;
-          width: 52%;
+          width: calc(100% - 136px);
           text-align: left;
         }
         .name{
@@ -38,7 +44,7 @@
           line-height: 1.4rem;
         }
         .company{
-          margin-top:12px;
+          margin-top:10px;
           font-size: 1.4rem;
           font-weight: 300;
           font-style: italic;
@@ -46,7 +52,7 @@
         .detail-link{
           margin-top: 0px;
           .link-see-detail{
-            margin-top:18px;
+            margin-top:12px;
           }
         }
       }

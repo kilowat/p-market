@@ -1,0 +1,124 @@
+{
+	"title":"Прицеп маркет",
+	"promoItems":[
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "new"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "hit"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "sold"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": ""
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "new"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "hit"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "sold"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": ""
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "new"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "hit"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "sold"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": ""
+		}
+	],
+	"reviews": [
+		{
+			"pic": "./images/reviews-img.png",
+			"name": "Иван Петров",
+			"text": "Мы работаем со многими известными и надежными производителями легковых"
+		},
+		{
+			"pic": "./images/reviews-img.png",
+			"name": "Иван Петров",
+			"text": "Мы работаем со многими известными и надежными производителями легковых"
+		},
+		{
+			"pic": "./images/reviews-img.png",
+			"name": "Иван Петров",
+			"text": "Мы работаем со многими известными и надежными производителями легковых"
+		},
+		{
+			"pic": "./images/reviews-img.png",
+			"name": "Иван Петров",
+			"text": "Мы работаем со многими известными и надежными производителями легковых"
+		},
+		{
+			"pic": "./images/reviews-img.png",
+			"name": "Иван Петров",
+			"text": "Мы работаем со многими известными и надежными производителями легковых"
+		},
+		{
+			"pic": "./images/reviews-img.png",
+			"name": "Иван Петров",
+			"text": "Мы работаем со многими известными и надежными производителями легковых"
+		},
+		{
+			"pic": "./images/reviews-img.png",
+			"name": "Иван Петров",
+			"text": "Мы работаем со многими известными и надежными производителями легковых"
+		},
+		{
+			"pic": "./images/reviews-img.png",
+			"name": "Иван Петров",
+			"text": "Мы работаем со многими известными и надежными производителями легковых"
+		},
+		{
+			"pic": "./images/reviews-img.png",
+			"name": "Иван Петров",
+			"text": "Мы работаем со многими известными и надежными производителями легковых"
+		}
+	]
+}

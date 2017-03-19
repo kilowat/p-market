@@ -1,0 +1,39 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+<div class="container">
+    <!--start component breadcrumbs-->
+      {% include './../components/breadcrumb.html' %}
+    <!--end component breadrumbs-->
+    <!--start component section header-->
+    <h1 class="section-header">
+      Новости
+    </h1>
+    <!--end component section header-->
+    <div class="section-text">
+      У нас регулярно появляются новинки каталога, а также новые поступления популярных<br>
+      прицепов и мототехники. Кроме того, у нас появляются новые услуги.<br>
+      Обо всем этом в наших новостях.
+    </div>
+    <!--start component news list-->
+    <div class="news-list-cmp">
+      <!--foreach $arResult-->
+      {% for item in newsItems %}
+      <div class="item">
+        <div class="pic">
+          <img src="{{ item.pic }}" alt="">
+        </div>
+        <div class="content">
+          <div class="name">{{ item.name }}</div>
+          <div class="date">{{ item.date }}</div>
+          <div class="text">{{ item.text }}</div>
+          <div class="button-link">
+            <a href="#" class="red-button" title="Подробнее" onmouseover="$(this).parents('.item').addClass('active')" onmouseout="$(this).parents('.item').removeClass('active')">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <!--endforeach-->
+    </div>
+    <!--end component news list-->
+</div>
+{% endblock %}

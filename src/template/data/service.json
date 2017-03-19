@@ -1,0 +1,89 @@
+{
+	"title":"Прицеп маркет",
+	"promoItems":[
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "200 000",
+			"old_price": "100 000",
+			"promo": "new"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "hit",
+			"old_price": "100 000"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "sold",
+			"old_price": "100 000"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "",
+			"old_price": "100 000"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "new",
+			"old_price": "100 000"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "hit",
+				"old_price": "100 000"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "sold",
+			"old_price": "100 000"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "",
+			"old_price": "100 000"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "new",
+			"old_price": "100 000"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "hit",
+			"old_price": "100 000"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "sold",
+			"old_price": "100 000"
+		},
+		{
+			"img":"./images/promo-img.png",
+			"name": "Прицеп M3C11 4556467",
+			"price": "2 000",
+			"promo": "",
+			"old_price": "100 000"
+		}
+	]
+}

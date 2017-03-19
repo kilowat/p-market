@@ -1,6 +1,6 @@
 {% extends './../layouts/master.html' %}
 {% block content %}
-  <div class="container">
+  <div class="container static-width-sidebar">
     <!--start component breadcrumbs-->
       {% include './../components/breadcrumb.html' %}
     <!--end component breadrumbs-->
@@ -8,7 +8,7 @@
     <h1 class="section-header">Прицепы общего назначения</h1>
     <!--end component section header-->
 
-    <div class="left sidebar static-width-sidebar">
+    <div class="left sidebar">
       <!--start left menu-->
       <div class="left-menu">
         <ul>
@@ -28,43 +28,42 @@
       <!--end component filter-->
     </div>
     <div class="right content">
-      <!--start component catalog product list-->
-      <style>
-        main{
-          background-color: #f3f3f3;
-        }
-      </style>
-      <div class="catalog">
-        <div class="product-list">
-          <!--foreach $arresult-->
-          {% for item in promoItems %}
-          <div class="item {{ item.promo }}">
-            <div class="cell">
-              <div class="pic">
-                <a href="#" title="{{ item.name }}">
-                  <img src="{{ item.img }}" alt="">
-                </a>
+          <!--start component catalog product list-->
+          <style>
+            main{
+              background-color: #f3f3f3;
+            }
+          </style>
+          <div class="catalog">
+            <div class="product-list">
+              <!--foreach $arresult-->
+              {% for item in promoItems %}
+              <div class="item {{ item.promo }}">
+                <div class="cell">
+                  <div class="pic">
+                    <a href="#" title="{{ item.name }}">
+                      <img src="{{ item.img }}" alt="">
+                    </a>
+                  </div>
+                  <div class="name">
+                    <a href="#" title="{{ item.name }}">{{ item.name }}</a>
+                  </div>
+                  <div class="price">
+                    <span>Цена: </span><b>{{ item.price }} &#8381;</b><br>
+                    <span class="old-price">{{ item.old_price }} &#8381;</span>
+                  </div>
+                  <div class="order">
+                    <button type="button" name="button">Отправить заявку</button>
+                  </div>
+                </div>
               </div>
-              <div class="name">
-                <a href="#" title="{{ item.name }}">{{ item.name }}</a>
-              </div>
-              <div class="price">
-                <span>Цена: </span><b>{{ item.price }} &#8381;</b><br>
-                <span class="old-price">{{ item.old_price }} &#8381;</span>
-              </div>
-              <div class="order">
-                <button type="button" name="button">Отправить заявку</button>
-              </div>
+              {% endfor %}
+              <!--endforeach-->
             </div>
           </div>
-          {% endfor %}
-          <!--endforeach-->
+          <!--end component catalog product list-->
         </div>
       </div>
-    </div>
-  </div>
-  <!--end component promo-->
-      <!--end component catalog product list-->
     </div>
   </div>
 {% endblock %}

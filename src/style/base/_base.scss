@@ -98,11 +98,21 @@ html, body {
   height: 100%;
 }
 
-html,main {
+html,
+body {
+  height: 100%;
+}
+
+main {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -4em;
+  margin: 0 auto -268px;
+}
+
+footer,
+.push {
+  height: 268px;
 }
 .section-header{
   margin-top: 35px;
@@ -113,13 +123,13 @@ html,main {
   font-family: $rubik;
   font-weight: 300;
 }
-footer,
-.push {
-  height: 4em;
-}
+
 .left.sidebar{
   float: left;
   width: 23%;
+  @include breakpoint(max-width 860px){
+    display: none;
+  }
 }
 .right.content{
   float: right;
@@ -127,4 +137,39 @@ footer,
 }
 .text-right{
   text-align: right;
+}
+.static-width-sidebar{
+  $side-bar-width: 222px;
+  .left.sidebar{
+    width: $side-bar-width;
+  }
+  .right.content{
+    width: calc(99% - #{$side-bar-width});
+    @include breakpoint(max-width 860px){
+      float: none;
+      width: 100%;
+    }
+  }
+}
+.back-link{
+  float: left;
+  font-size: 1.2rem;
+  text-transform: none;
+  font-weight: 300;
+  @include breakpoint(max-width 740px){
+    float: none;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+  }
+  .arrow-icon{
+    font-size: 1.4rem;
+    margin-right: 10px;
+  }
+}
+.section-text{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-bottom: 44px;
 }

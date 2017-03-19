@@ -1,0 +1,42 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+<div class="container">
+  <!--start component breadcrumbs-->
+    {% include './../components/breadcrumb.html' %}
+  <!--end component breadrumbs-->
+  <!--start component reviews-->
+  <h1 class="section-header">
+    Отзывы
+  </h1>
+  <div class=" reviews-page">
+    <div class="reviews-list">
+      <!--foreach $arResult-->
+      {% for item in reviews %}
+      <div class="item">
+        <div class="cell">
+          <div class="pic">
+            <img src="{{ item.pic }}" alt="">
+          </div>
+          <div class="text">
+            <div class="name">
+              {{ item.name }}
+            </div>
+            <div class="comment">
+              {{ item.text }}
+            </div>
+            <div class="company">
+              ООО Олимп
+            </div>
+            <div class="detail-link">
+              <a href="#" title="" class="link-see-detail">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <!--endforeach-->
+    </div>
+  </div>
+  <!--end component reviews-->
+</div>
+{% endblock %}
