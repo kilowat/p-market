@@ -13,6 +13,24 @@ h2{
     padding-bottom: 1.2em;
   }
 }
+.section-header{
+  margin-top: 35px;
+  margin-bottom: 40px;
+  font-size: 2.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $rubik;
+  font-weight: 300;
+}
+.section-header-2{
+  margin-bottom: 20px;
+  margin-top: 35px;
+  font-size: 2.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $rubik;
+  font-weight: 300;
+}
 .block-text{
   font-size: 1.49em;
   font-weight: 300;
@@ -26,4 +44,18 @@ h2{
   &:hover{
     color: $link-hover-color!important;
   }
+}
+.section-text{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-bottom: 44px;
+}
+.section-text-2{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
