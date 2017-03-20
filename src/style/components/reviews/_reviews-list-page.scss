@@ -1,8 +1,8 @@
 .reviews-page{
-  padding-bottom: 75px;
   .reviews-list{
+    margin-top: 55px;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     @include container;
     @include breakpoint(max-width 670px){
       text-align: center;
@@ -57,5 +57,28 @@
         }
       }
     }
+  }
+}
+.btn-green-light.add-reviews{
+  width: 205px;
+  text-transform: uppercase;
+  color: #06873d;
+  font-size: 0.8rem;
+  font-family: $rubik;
+  font-weight: 500;
+  line-height: 1.7rem;
+  >*{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  i{
+    margin-right: 5px;
+  }
+}
+.reviews-form{
+  .section-header-2{
+    padding-top: 50px;
+    padding-bottom: 45px;
+    text-transform: none;
   }
 }
