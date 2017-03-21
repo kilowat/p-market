@@ -21,6 +21,9 @@ h2{
   text-transform: uppercase;
   font-family: $rubik;
   font-weight: 300;
+  @include breakpoint(max-width $display-small){
+    font-size: 1.5rem;
+  }
 }
 .section-header-2{
   margin-bottom: 20px;
@@ -30,6 +33,9 @@ h2{
   text-transform: uppercase;
   font-family: $rubik;
   font-weight: 300;
+  @include breakpoint(max-width $display-small){
+    font-size: 1.5rem;
+  }
 }
 .block-text{
   font-size: 1.49em;
@@ -50,6 +56,9 @@ h2{
   font-size: 1.2rem;
   font-weight: 300;
   padding-bottom: 44px;
+  @include breakpoint(max-width $display-small){
+    font-size: 1.2rem;
+  }
 }
 .section-text-2{
   text-align: center;
@@ -58,4 +67,7 @@ h2{
   margin-bottom: 27px;
   line-height: 1.5rem;
   line-height: 1.6rem;
+  @include breakpoint(max-width $display-small){
+    font-size: 1.2rem;
+  }
 }
