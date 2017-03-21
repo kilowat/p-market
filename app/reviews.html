@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="./css/components/service/service-list.css">
   <!-- endinject -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="http://pixp.fdrv.guru/pixp.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -345,22 +344,78 @@
         <div class="reviews-form-container">
           <form class="" action="index.html" method="post">
             <div class="top-reviews-block">
-              <div class="table">
-                <div class="table-row">
-                  <div class="table-cell">
-                    <input type="text" name="" value="">
+              <div class="left-reviews-block">
+                <div class="row">
+                  <input type="text" name="NAME" value="" placeholder="ФИО">
+                </div>
+                <div class="row">
+                  <input type="text" name="POSITION" value="" placeholder="ДОЛЖНОСТЬ">
+                </div>
+                <div class="row">
+                  <input type="text" name="COMPANY" value="" placeholder="ОРГАНИЗАЦИЯ">
+                </div>
+                <div class="row">
+                  <input type="text" name="CITY" value="" placeholder="ГОРОД">
+                </div>
+                <div class="row">
+                  <input type="text" name="PRODUCT_REVIEW" value="" placeholder="ПРОДУКТ ОТЗЫВА">
+                </div>
+              </div>
+              <div class="right-reviews-block">
+                <div class="table">
+                  <div class="table-row">
+                    <div class="table-cell">
+                      <label for="photo">Фотография:</label>
+                    </div>
+                    <div class="table-cell input-cell">
+                      <span class="input-file">Файл инпут</span>
+                    </div>
                   </div>
-                  <div class="table-cell">
-                    Фотография
+                  <div class="table-row">
+                    <div class="table-cell">
+                      <label for="video">Видео отзыв:</label>
+                    </div>
+                    <div class="table-cell input-cell">
+                      <span class="input-file">Файл инпут</span>
+                    </div>
                   </div>
-                  <div class="table-cell">
-                    <input type="file" name="" value="">
+                  <div class="table-row">
+                    <div class="table-cell">
+                      <label for="PRODUCT_RATING">Оцена продукта:</label>
+                    </div>
+                    <div class="table-cell">
+                      <div id="product-rating"></div>
+                      <input type="hidden" id="PRODUCT_RATING" name="PRODUCT_RATING" value="">
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">
+                      <label for="COMPANY_RATING">Оцена компании:</label>
+                    </div>
+                    <div class="table-cell">
+                      <input type="hidden" id="COMPANY_RATING" name="COMPANY_RATING" value="">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="bottom-reveiws-block">
-
+              <div class="row">
+                <textarea name="" placeholder="ДОСТОИНСТВА"></textarea>
+              </div>
+              <div class="row">
+                <textarea name="" placeholder="НЕДОСТАТКИ"></textarea>
+              </div>
+              <div class="row">
+                <textarea name="" placeholder="ОБЩИЕ ВПЕЧАТЛЕНИЯ"></textarea>
+              </div>
+              <div class="row text-center">
+                качпа
+              </div>
+              <div class="row text-center">
+                <button type="submit" class="btn-green-light send-reviews" name="button">отправить отзыв</button>
+                <button type="reset" name="button" class="reset-btn">Очистить форму</button>
+              </div>
             </div>
           </form>
         </div>
@@ -470,6 +525,7 @@
   <script src="./libs/select/js/selectize.min.js"></script>
   <script src="./libs/slick/js/slick.min.js"></script>
   <script src="./libs/sliderLimit/js/jquery.limitslider.js"></script>
+  <script src="./libs/stars/js/jquery.star-rating-svg.js"></script>
   <!--endinject-->
   <!--dev:js-->
   <script src="./js/filter.js"></script>

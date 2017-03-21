@@ -18,3 +18,12 @@
     background-color: darken($bg, 10);
   }
 }
+@mixin input-text(){
+  height: 45px;
+  border: 1px solid #b8b8bc;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 3px;
+  padding-left: 15px;
+}

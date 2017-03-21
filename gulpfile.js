@@ -41,6 +41,7 @@ var libs = {
   sliderLimit:libsPath.sliderLimit,
   jqueryUi:libsPath.jqueryUi,
    cookie:libsPath.cookie,
+  //stars:libsPath.stars,
   //placeholder:libsPath.placeholder,
   //fullpage:libsPath.fullpage,
 };

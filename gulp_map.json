@@ -137,5 +137,10 @@
 		"js":[
 			"src/libs/cookie/js/js.cookie.js"
 	 ]
- }
+ 	},
+ 	"stars":{
+		"js":[
+			"src/libs/stars/js/jquery.star-rating-svg.js"
+		]
+	}
 }
